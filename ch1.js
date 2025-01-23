@@ -169,23 +169,23 @@ collisionsMap.forEach((row, i) => {
 
 const image = new Image();
 image.src =
-  "https://cdn.glitch.global/9c48f61b-bf4f-455f-a449-a1e4225c79a2/map.png?v=1736767697569";
+  'images/edge-lab.png';
 
 const elijahDown = new Image();
 elijahDown.src =
-  "https://cdn.glitch.global/9c48f61b-bf4f-455f-a449-a1e4225c79a2/elijah_down.png?v=1736743772297";
+  'images/elijah_down.png';
 
 const elijahUp = new Image();
 elijahUp.src =
-  "https://cdn.glitch.global/9c48f61b-bf4f-455f-a449-a1e4225c79a2/elijah_up.png?v=1736743771213";
+  'images/elijah_up.png';
 
 const elijahRight = new Image();
 elijahRight.src =
-  "https://cdn.glitch.global/9c48f61b-bf4f-455f-a449-a1e4225c79a2/elijah_right.png?v=1736739318660";
+  'images/elijah_right.png';
 
 const elijahLeft = new Image();
 elijahLeft.src =
-  "https://cdn.glitch.global/9c48f61b-bf4f-455f-a449-a1e4225c79a2/elijah_left.png?v=1736739322790";
+  'images/elijah_left.png';
 
 class Sprite {
   constructor({ position, velocity, image, frames = { max: 1 }, sprites }) {
