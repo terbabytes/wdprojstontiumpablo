@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: black;
+  background-image: url("https://cdn.glitch.global/9c48f61b-bf4f-455f-a449-a1e4225c79a2/backgroundTenta.png?v=1737613613263");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "VT323", monospace;
+}
+.moving-streak {
+  position: absolute;
+  animation: translate;
+  animation-name: animate;
+  animation-duration: infinite;
+}
+
+@keyframes animate {
+  0%   {transform: translate (10%);}
+  25%  {transform: translate (20%);}
+  50%  {transform: translate (30%);}
+  75%  {transform: translate (20%);}
+  100% {transform: translate (10%);}
+}
+
+/* Callout styles */
+.callout {
+  font-size: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  max-width: 800px;
+}
+
+.callout-container {
+  padding: 20px;
+  width: 500px;
+  background-color: red;
+  color: white;
+  right: 50%;
+}
+
+.closebtn {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: white;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 5%; /* Adjust spacing between the button and caption */
+  font-size: 16px; /* Adjust font size as needed */
+  color: white; /* Ensure visibility */
+}
+
+#homepage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+}
+
+#logo-container {
+  margin-bottom: 15%;
+}
+
+#homepage-logo {
+  width: 700px; /* Set appropriate size for the logo */
+  height: auto;
+  image-rendering: crisp-edges;
+}
+
+#plybttn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+#play-button, #abtus-button{
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  height: 100px;
+}
+
+
+.play-image, .abtus-button-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 275px;
+  height: auto;
+  transition: opacity 0.3s;
+  image-rendering: crisp-edges;
+}
+
+
+footer {
+  color:white;
+  position:fixed;
+  left:2%;
+  bottom:2%;
+}

@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  background-color: black; /* Optional background color */
+  font-family: "VT323", monospace;
+}
+
+.countdown {
+  position: fixed; /* Ensures it's aligned relative to the viewport */
+  top: 7%; /* Adjust vertically */
+  left: 50%; /* Move to the center horizontally */
+  transform: translateX(-50%); /* Center exactly */
+  color: white;
+  font-size: 60px;
+}
+figcaption {
+  text-align: center;
+  font-size: 25px;
+}
+
+.callout {
+  display: flex;
+  padding: 20px;
+  width: 700px;
+  height: 40%;
+  background-color: red;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.callout-container {
+  padding: 20px;
+  width: 500px;
+  color: white;
+  font-family: "VT323", monospace;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+canvas {
+  background-color: white;
+}
+
+footer {
+  position: fixed;
+  left: 2%;
+  bottom: 2%;
+}

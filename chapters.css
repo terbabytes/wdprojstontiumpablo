@@ -1,0 +1,65 @@
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "VT323", monospace;
+  background: black;
+  color: white;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.chaptersText {
+  padding-left: 18%;
+  padding-right: 18%
+}
+
+.chapters {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.notepad {
+  position: fixed;
+  bottom: 2%;
+  right: 0.01%;
+}
+
+#notepad-img {
+  display: block;
+}
+
+#notepad-hover-img {
+  display: none;
+}
+
+#notepad-btn:hover #notepad-img {
+  display: none !important;
+}
+
+#notepad-btn:hover #notepad-hover-img {
+  display: block !important;
+}
+
+footer {
+  position:fixed;
+  left:2%;
+  bottom:2%;
+}

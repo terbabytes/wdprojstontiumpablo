@@ -1,0 +1,11 @@
+.cutscene {
+position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+video {
+  max-width: 100%; /* Ensures the video is responsive */
+}

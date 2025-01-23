@@ -1,0 +1,161 @@
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  flex-direction: column;
+  font-family: "VT323", monospace;
+  background-color: black;
+  color:white;
+}
+.back-button {
+  position: fixed;
+  top: 12%;
+  left: -1%;
+  
+}
+
+section {
+  scroll-margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navLinks {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  justify-content: center;
+  
+}
+
+.navLinks a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.navLinks a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navLinks a.active {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.question {
+  background-color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.devPics {
+  display:none;
+}
+
+.abtus {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.socmed {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+#ptext {
+  font-size: 25px;
+}
+
+.project-contatiner {
+  width: 75%;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  margin-left: 11%;
+
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.la,
+.ta {
+  width: 550px;
+  background-color: black;
+  padding: 20px;
+
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.labtus,
+.tabtus {
+  width: 400px;
+  background-color: black;
+  padding: 20px;
+
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.lsm,
+.tsm {
+  width: 400px;
+  background-color: black;
+  padding: 20px;
+  text-align: left;
+  color: white;
+
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.question {
+  color: black;
+}
+
+footer {
+  color:white;
+  position:relative;
+}
