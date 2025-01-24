@@ -16,7 +16,7 @@ the Edge Lab? <br>
 ---
 
 
-**Progress Report**
+### Progress Report
 
 Emoji Legend:
 
@@ -43,7 +43,6 @@ Emoji Legend:
   <li>About Page (😀)</li>
   <ul>
     <li>Includes description of project, about the author (me!), q&a, and socmed</li>
-    <li>Format option: something out of an old camera menu?</li>
   </ul>
   <li>Notepad (😀)</li>
   <ul>
@@ -60,3 +59,33 @@ Emoji Legend:
   <li>Chapter 2 (😔) > Will only be released by 4th quarter </li>
 </ol>
 
+### Aesthetics
+<p>This portion will cover aesthetics for both the overall website and the individual webpages.</p>
+
+**Overall Website**
+- Very hard to describe overall actually. Basically I could describe the aesthetic as like an indie pixel game with a horror-ish scheme, but not too horror (gore, jumpscares, etc) 
+
+**Homepage**
+- Something like the FNAF1 homepage (see image for context)
+<p>images:</p>
+![Fnaf1]()
+
+**About page**
+- Format option: something out of an old camera menu?
+- Similar aesthetics to the homepage
+<p>images:</p>
+
+**Chapters page**
+- Similar aesthetics to the homepage
+<p>images:</p>
+
+**Notepad page**
+- Similar aesthetics to the homepage
+- Something with a background similar to the one in the homepage
+- Somewhat eerie vibes?
+<p>images:</p>
+
+**Chapter 1**
+- Similar aesthetics to the gameplay of Omori, Deltarune, etc. (etc because I can't think of other examples)
+- Less colorful the games mentioned, but still a different color scheme than the current Edge Lab
+<p>images:</p>
