@@ -68,25 +68,19 @@ Emoji Legend:
 
 **Homepage**
 - Something like the FNAF1 homepage (see image for context)
-<p>image/s:</p>
-![Fnaf1](images/fnaf.png)
 
 **About page**
 - Format option: something out of an old camera menu?
 - Similar aesthetics to the homepage
-<p>image/s:</p>
 
 **Chapters page**
 - Similar aesthetics to the homepage
-<p>image/s:</p>
 
 **Notepad page**
 - Similar aesthetics to the homepage
 - Something with a background similar to the one in the homepage
 - Somewhat eerie vibes?
-<p>image/s:</p>
 
 **Chapter 1**
 - Similar aesthetics to the gameplay of Omori, Deltarune, etc. (etc because I can't think of other examples)
 - Less colorful the games mentioned, but still a different color scheme than the current Edge Lab
-<p>image/s:</p>
