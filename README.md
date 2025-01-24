@@ -1,6 +1,6 @@
 # Eidolon
 
-### Made by: Tara Laraine S. Pablo, 9-Strontium Sr21
+### Made by: Tara Laraine S. Pablo, 9-Strontium
 
 ---
 
