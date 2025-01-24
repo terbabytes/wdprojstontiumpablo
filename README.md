@@ -53,6 +53,7 @@ Emoji Legend:
   <li>Chapter 1 (😀)</li>
   <ul>
     <li>Very short demo of the story</li>
+    <li>Current color seen are not the final colors (check aesthetic part for context)</li>
     <li>May be longer after YMSAT</li>
     <li>This chapter must be finished before chapter 2 can be accessed</li>
   </ul>
@@ -67,25 +68,25 @@ Emoji Legend:
 
 **Homepage**
 - Something like the FNAF1 homepage (see image for context)
-<p>images:</p>
-![Fnaf1]()
+<p>image/s:</p>
+![Fnaf1](images/fnaf.png)
 
 **About page**
 - Format option: something out of an old camera menu?
 - Similar aesthetics to the homepage
-<p>images:</p>
+<p>image/s:</p>
 
 **Chapters page**
 - Similar aesthetics to the homepage
-<p>images:</p>
+<p>image/s:</p>
 
 **Notepad page**
 - Similar aesthetics to the homepage
 - Something with a background similar to the one in the homepage
 - Somewhat eerie vibes?
-<p>images:</p>
+<p>image/s:</p>
 
 **Chapter 1**
 - Similar aesthetics to the gameplay of Omori, Deltarune, etc. (etc because I can't think of other examples)
 - Less colorful the games mentioned, but still a different color scheme than the current Edge Lab
-<p>images:</p>
+<p>image/s:</p>
