@@ -1,9 +1,6 @@
 body {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
   font-family: "VT323", monospace;
-  background: black;
   color: white;
 }
 
@@ -19,14 +16,12 @@ p {
 
 .chapters {
   display: flex;
-  gap: 50px;
   justify-content: center;
   align-items: center;
-  height: 500px;
 }
 
 figcaption {
-  text-align: center;
+
   font-size: 25px;
   color: white;
 }
