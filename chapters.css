@@ -20,6 +20,14 @@ p {
   align-items: center;
 }
 
+.grid {
+  display:grid;
+  grid-template-columns: auto auto auto;
+}
+.grid > div {
+  border: 1px solid white;
+}
+
 figcaption {
 
   font-size: 25px;
