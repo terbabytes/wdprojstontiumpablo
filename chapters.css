@@ -1,68 +1,95 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  background-color: black;
-  font-family: "VT323", monospace;
-  color: white;
-}
+    background-color: black;
+    font-family: "VT323", monospace;
+    color: white;
+    width: 100%;
+    overscroll-behavior: none;
+    height: 100%;
+  }
 
-h1,
-p {
+  #main-content {
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Allow vertical scrolling within the content */
+    /* If you want NO scrolling at all, use:
+    overflow: hidden; */
+}
+  
+  h1,
+  p {
+    text-align: center;
+  }
+  
+  .cell > h1 {
+    font-size: 50px;
+    position: relative;
+  }
+
+  .cell > figure {
+    margin: 10%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% 25% 25% ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5%;
+    transform: translate(-25%, -20%) rotate(-6deg);
+
+    
+  }
+  .grid > .cell {
+    border: 10px solid white;
   text-align: center;
+  font-size: 30px;
+  background-color:#0101aa;
+  overflow: hidden;
+  }
+
+
+  .grid > .cell img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.chaptersText {
-  padding-left: 18%;
-  padding-right: 18%
+  figcaption {
+    font-size: 50px;
+    color: white;
+  }
+  
+  #notepad-img, #notepad-hover-img {
+    width: 70%;
+    height: 70%;
 }
 
-.chapters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid {
-  display:grid;
-  grid-template-columns: auto auto auto;
-}
-.grid > div {
-  border: 1px solid white;
-}
-
-figcaption {
-
-  font-size: 25px;
-  color: white;
-}
-.back-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-}
-
-.notepad {
-  position: fixed;
-  bottom: 2%;
-  right: 0.01%;
-}
-
-#notepad-img {
-  display: block;
-}
-
-#notepad-hover-img {
-  display: none;
-}
-
-#notepad-btn:hover #notepad-img {
-  display: none !important;
-}
-
-#notepad-btn:hover #notepad-hover-img {
-  display: block !important;
-}
-
-footer {
-  position:fixed;
-  left:2%;
-  bottom:2%;
-}
+  #notepad-img {
+    display: block;
+  }
+  
+  #notepad-hover-img {
+    display: none;
+  }
+  
+  #notepad-btn:hover #notepad-img {
+    display: none !important;
+  }
+  
+  #notepad-btn:hover #notepad-hover-img {
+    display: block !important;
+  }
+  
+  footer {
+    position:fixed;
+    left:2%;
+    bottom:2%;
+  }

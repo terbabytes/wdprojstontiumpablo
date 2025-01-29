@@ -8,8 +8,10 @@ body {
   text-align: center;
   flex-direction: column;
   font-family: "VT323", monospace;
-  background-color: black;
+  background-color: #ce1e37;
   color:white;
+  margin: 0;
+  padding: 0;
 }
 .back-button {
   position: fixed;
@@ -28,19 +30,27 @@ section {
   padding-right: 100px;
 }
 
-ul {
-  list-style-type: none;
+.navLinks ul {
+  list-style: none;
+  margin: 0; /* Remove default ul margins */
+  padding: 0; /* Remove default ul padding */
+  text-align: center; /* Center the links horizontally if you want */
+  display: flex; /* Make the list a flex container too */
+  justify-content: center; /* Center the list items */
 }
 
 .navLinks {
-  overflow: hidden;
-  background-color: black;
   position: fixed;
-  top: 0;
-  left: 30%;
-  right: 0;
-  width: 100%;
-  
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80px; /* Set your desired height here (e.g., 80px) */
+    padding: 0 20px; /* Add horizontal padding if needed */
 }
 
 .navLinks a {
@@ -49,6 +59,8 @@ ul {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 40px;
+  background-color: black;
+    color: white;
 }
 
 .navLinks a:hover {
@@ -56,9 +68,24 @@ ul {
   color: black;
 }
 
-.navLinks a.active {
-  background-color: black;
+nav a[href="#Project"].active {
+  background-color: #ce1e37; /* Project link active color */
   color: white;
+}
+
+nav a[href="#AboutUs"].active {
+  background-color: #095c96; /* About Us link active color */
+  color: white;
+}
+
+nav a[href="#FAQs"].active {
+  background-color: #8a2c97; /* FAQs link active color */
+  color: white;
+}
+
+nav a[href="#SocialMedia"].active {
+  background-color: #efb145; /* Social Media link active color */
+  color: black;
 }
 
 .hidden {
@@ -67,6 +94,7 @@ ul {
 
 .question {
   background-color: white;
+  color: #8a2c97;
   padding: 10px;
   font-size: 25px;
 }
@@ -103,7 +131,7 @@ ul {
 .project-contatiner {
   width: 75%;
   color: white;
-  background-color: black;
+  background-color: #ce1e37;
   padding: 20px;
   margin-left: 11%;
 
@@ -115,7 +143,7 @@ ul {
 .la,
 .ta {
   width: 550px;
-  background-color: black;
+  background-color: #8a2c97;
   padding: 20px;
 
   border-color: white;
@@ -126,7 +154,7 @@ ul {
 .labtus,
 .tabtus {
   width: 400px;
-  background-color: black;
+  background-color: #095c96;
   padding: 20px;
 
   border-color: white;
@@ -136,10 +164,12 @@ ul {
 
 .lsm,
 .tsm {
-  width: 400px;
-  background-color: black;
+  width: 50vw;
+  height: 13vh;
+  background-color: #efb145;
   padding: 20px;
   text-align: left;
+  font-size: 30px;
   color: white;
 
   border-color: white;
@@ -147,12 +177,8 @@ ul {
   border-style: solid;
 }
 
-h3 {
-  font-size: 40px;
-}
-
-.question {
-  color: black;
+h2 {
+  font-size: 60px;
 }
 
 footer {
