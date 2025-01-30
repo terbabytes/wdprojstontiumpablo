@@ -1,11 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "VT323", monospace;
-  background-color:black;
+  background-image: url("images/notepadbg.png");
   color: white;
   text-align: center;
+  margin: 0; /* Remove default body margins */
+    padding: 0; /* Remove default body padding */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh;
 }
 
 h1 {
@@ -26,29 +35,38 @@ h1 {
 
 .notepad {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* Align content to the top to reduce space */
-  text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content both vertically and horizontally */
+    flex-grow: 1; /* Allow notepad to expand to fill available space */
+    margin: 20px 0; /* Add some margin around notepad */
 }
 
 .top-btn,
 .bottom-btn {
   display: flex;
-  margin: 1.5% 0;
+}
 
+.top-btn figure, .bottom-btn figure { /* Target the figures inside the button containers */
+  margin: 0;
+  padding: 0;
 }
 
 button {
-  padding: 10px 15px;
-  font-size: 20px;
-  font-family: "VT323", monospace;
-  background-color: black;
-  color: white;
-  border-color:white;
-  border: solid;
-  cursor: pointer;
-  border-radius: 5px;
+  width: 270px;
+  height: 10vh;
+  
+    background-color: transparent;
+    color: black; /* Changed to black for visibility against white background */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#notepad-up, #notepad-down {
+  width: 35%;
+  height: 35%;
 }
 
 
