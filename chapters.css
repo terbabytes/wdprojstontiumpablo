@@ -87,6 +87,38 @@ body {
   #notepad-btn:hover #notepad-hover-img {
     display: block !important;
   }
+
+  #ch1png {
+    display: block;
+  }
+  
+  #ch1png-hover {
+    display: none;
+  }
+
+  #ch1-btn:hover #ch1png  {
+    display: none !important;
+  }
+  
+  #ch1-btn:hover #ch1png-hover {
+    display: block !important;
+  }
+  
+  #ch2png {
+    display: block;
+  }
+  
+  #ch2png-hover {
+    display: none;
+  }
+
+  #ch2-btn:hover #ch2png  {
+    display: none !important;
+  }
+  
+  #ch2-btn:hover #ch2png-hover {
+    display: block !important;
+  }
   
   footer {
     position:fixed;

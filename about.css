@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .back-button {
   position: fixed;
   top: 12%;
@@ -88,8 +89,34 @@ nav a[href="#SocialMedia"].active {
   color: black;
 }
 
+
+#project-text {
+font-size: 40px;
+}
+
+.project-portion {
+  width: 80vw;
+  border: 5px solid white;
+  padding: 10px;
+  margin-bottom: 60px;
+}
+
+.project-portion > details > summary {
+  font-size: 50px;
+}
+
+li {
+  font-size: 40px;
+  text-align: left;
+}
+
+
 .hidden {
   display: none;
+}
+
+.q{
+  width: 900px;
 }
 
 .question {
@@ -97,7 +124,13 @@ nav a[href="#SocialMedia"].active {
   color: #8a2c97;
   padding: 10px;
   font-size: 25px;
+  text-align: left;
 }
+
+details {
+  margin-bottom: 10px;
+}
+
 
 .a {
   display: flex;
@@ -106,10 +139,6 @@ nav a[href="#SocialMedia"].active {
   align-items: center;
   gap: 20px;
   font-size: 20px;
-}
-
-.devPics {
-  display:none;
 }
 
 .abtus {
@@ -128,10 +157,10 @@ nav a[href="#SocialMedia"].active {
   font-size: 25px;
 }
 
-.project-contatiner {
+.project-container {
   width: 75%;
   color: white;
-  background-color: #ce1e37;
+  background-color: #095c96;
   padding: 20px;
   margin-left: 11%;
 
@@ -151,15 +180,51 @@ nav a[href="#SocialMedia"].active {
   border-style: solid;
 }
 
-.labtus,
+
 .tabtus {
-  width: 400px;
+  width: 50vw;
   background-color: #095c96;
   padding: 20px;
+  text-align: left;
+
+  font-size:40px;
+  
 
   border-color: white;
   border-width: 5px;
   border-style: solid;
+}
+
+.tabtus ul {
+  list-style: none;
+}
+
+
+
+.abt-us {
+  display: flex;
+  align-items: center; /* Align image and text vertically */
+  gap: 20px; /* Space between image and text */
+  justify-content: center; /* Center everything horizontally */
+}
+
+.dev-profile {
+  max-width: 500px;
+  max-height: auto;
+  transform: scale(0.8); /* Adjust as needed */
+}
+
+.dev-profile figure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dev-profile img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .lsm,
@@ -178,36 +243,100 @@ nav a[href="#SocialMedia"].active {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 80px;
+
+}
+
+.project-portion a {
+  color: white
+}
+
+.project-portion table {
+  width: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 10px;
+}
+
+.project-portion th,
+.project-portion td {
+  border: 3px solid white;
+  padding: 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+
+.project-portion table col.date {
+  width: 150px;
+}
+
+.project-portion th {
+  font-size: 40px;
 }
 
 .insta {
   background:url("images/ig-icon.png") no-repeat;
   width: 300px;
   height: 321px;
-  transform: translateY(-15%) translateX(30%) scale(30%);
+  transform: translateY(-30%) translateX(30%) scale(30%);
+}
+
+.socmed {
+  transform: translateX(15%);
 }
 
 .insta:hover {
   background:url("images/ig-icon-hover.png") no-repeat;
   width: 300px;
   height: 321px;
-  transform: translateY(-15%) translateX(30%) scale(30%);
+  transform: translateY(-30%) translateX(30%) scale(30%);
 }
 
 .twitter {
   background:url("images/x-icon.png") no-repeat;
   width: 300px;
   height: 321px;
-  transform: translateY(-15%) translateX(-30%) scale(30%);
+  transform: translateY(-30%) translateX(-30%) scale(30%);
 }
 
 .twitter:hover {
   background:url("images/x-icon-hover.png") no-repeat;
   width: 300px;
   height: 321px;
-  transform: translateY(-15%) translateX(-30%) scale(30%);
+  transform: translateY(-30%) translateX(-30%) scale(30%);
 }
+
+
+
+.email-container {
+  transform: translateY(-180%);
+}
+
+.email-container > p {
+  font-size: 30px;
+}
+
+.social-media-container > p {
+  font-size: 30px
+}
+
+.emails {
+  position:relative;
+  font-size: 30px;
+  transform: translateX(10%) translateY(-30%);
+  max-width: 80%;
+}
+
+.emails a[href^="mailto:"] {
+  color: white; /* Or a suitable color */
+  text-decoration: none;
+}
+
+.emails a[href^="mailto:"]:hover {
+  text-decoration: underline;
+}
+
 
 footer {
   color:white;
