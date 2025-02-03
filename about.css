@@ -69,13 +69,8 @@ section {
   color: black;
 }
 
-nav a[href="#Project"].active {
-  background-color: #ce1e37; /* Project link active color */
-  color: white;
-}
-
 nav a[href="#AboutUs"].active {
-  background-color: #095c96; /* About Us link active color */
+  background-color: #ce1e37; /* About Us link active color */
   color: white;
 }
 
@@ -160,7 +155,7 @@ details {
 .project-container {
   width: 75%;
   color: white;
-  background-color: #095c96;
+  background-color: #ce1e37;
   padding: 20px;
   margin-left: 11%;
 
@@ -183,7 +178,7 @@ details {
 
 .tabtus {
   width: 50vw;
-  background-color: #095c96;
+  background-color: #ce1e37;
   padding: 20px;
   text-align: left;
 
