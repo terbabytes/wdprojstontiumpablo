@@ -1,11 +1,16 @@
 .cutscene {
-position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  position: fixed;
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
 }
 
 video {
-  max-width: 100%; /* Ensures the video is responsive */
+  max-width: 90%; /* Adjust as needed */
+  max-height: 90%; /* Adjust as needed */
 }

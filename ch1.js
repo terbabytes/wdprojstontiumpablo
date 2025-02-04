@@ -169,6 +169,13 @@ for (let i = 0; i < collisions.length; i += 51) {
   collisionsMap.push(collisions.slice(i, 51 + i));
 }
 
+const interactiveMap = [];
+for (let i = 0; i < deadBody.length; i += 51) {
+  interactiveMap.push(deadBody.slice(i, 51 + i));
+}
+
+console.log(interactiveMap)
+
 class Boundary {
   constructor({ position }) {
     this.position = position;
@@ -177,7 +184,7 @@ class Boundary {
   }
 
   draw() {
-    c.fillStyle = "rgba(255,0,0,0)";
+    c.fillStyle = "rgba(255,0,0,0.5)";
     c.fillRect(this.position.x,this.position.y, this.width, this.height);
   }
 }
@@ -218,6 +225,27 @@ collisionsMap.forEach((row, i) => {
     
   });
 });
+
+const interactive = []
+
+interactiveMap.forEach((row, i) => {
+  row.forEach((symbol, j) => {
+    
+    if (symbol === 1817) {
+      interactive.push(
+        new Boundary({
+          position: {
+            x: j * Boundary.width + offset.x,
+            y: i * Boundary.height + offset.y,
+          },
+        })
+      );
+    }
+    
+  });
+});
+
+console.log(interactive)
 
 const image = new Image();
 image.src =
@@ -317,7 +345,7 @@ const keys = {
   },
 };
 
-const movables = [background, ...boundaries];
+const movables = [background, ...boundaries, ...interactive];
 
 function rectangularCollision({ rectangle1, rectangle2 }) {
   return (
@@ -328,19 +356,57 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
   );
 }
 
+const sequence = {
+  initiated: false,
+}
+
 function animate() {
   window.requestAnimationFrame(animate);
   background.draw();
   boundaries.forEach((boundary) => {
     boundary.draw();
   });
-
+  interactive.forEach(interactiveObj => { // Draw dead bodies
+    interactiveObj.draw();
+});
   player.draw();
 
-  // if (player.position.x + player.width >= )
 
   let moving = true;
   player.moving = false;
+  
+  if (sequence.initiated) return
+// activate a battle
+  if(keys.w.pressed || keys.a.pressed || keys.d.pressed || keys.s.pressed) {
+
+    for (let i = 0; i < interactive.length; i++) {
+      const part = interactive[i];
+      const overlappingArea = 
+      (Math.min(
+        player.position.x + player.width, 
+        part.position.x + part.width
+      ) - Math.max(player.position.x, part.position.x)) * 
+      (Math.min(
+        player.position.y + player.height, 
+        part.position.y + part.height
+      ) - 
+      Math.max(player.position.y, part.position. y))
+      if (
+        rectangularCollision({
+          rectangle1: player,
+          rectangle2: part
+        }) && 
+        overlappingArea > (player.width * player.height) / 2
+      ) {
+        console.log("dead body sequence")
+        sequence.initiated = true
+        break;
+      }
+    }
+  }
+
+
+  
   if (keys.w.pressed && lastKey === "w") {
     player.moving = true;
     player.image = player.sprites.up;
@@ -363,6 +429,9 @@ function animate() {
         break;
       }
     }
+
+
+
     if (moving) {
       movables.forEach((movables) => {
         movables.position.y += 5;
