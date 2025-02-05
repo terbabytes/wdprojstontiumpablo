@@ -9,41 +9,6 @@ body {
   font-family: "VT323", monospace;
 }
 
-.countdown {
-  position: fixed; /* Ensures it's aligned relative to the viewport */
-  top: 7%; /* Adjust vertically */
-  left: 50%; /* Move to the center horizontally */
-  transform: translateX(-50%); /* Center exactly */
-  color: white;
-  font-size: 60px;
-}
-figcaption {
-  text-align: center;
-  font-size: 25px;
-}
-
-.callout {
-  display: flex;
-  padding: 20px;
-  width: 700px;
-  height: 40%;
-  background-color: red;
-  color: #ffffff;
-  left: 25%;
-  transform: translateY(15%);
-  margin: auto;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-}
-
-.callout-container {
-  padding: 20px;
-  width: 500px;
-  color: white;
-  font-family: "VT323", monospace;
-}
-
 .back-button {
   position: fixed;
   top: 20px;
@@ -52,6 +17,20 @@ figcaption {
 
 canvas {
   background-color: white;
+}
+
+.playcutscene {
+  background:url("images/cutscene.png") no-repeat;
+  width: 500px;
+  height: 500px;
+  transform: translateY(-30%) translateX(-30%) scale(25%);
+}
+
+.playcutscene:hover {
+  background:url("images/cutscene-hover.png") no-repeat;
+  width: 500px;
+  height: 500px;
+  transform: translateY(-30%) translateX(-30%) scale(25%);
 }
 
 footer {
