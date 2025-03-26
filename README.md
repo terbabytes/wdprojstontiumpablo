@@ -43,7 +43,6 @@ link version (clearer flow): https://www.canva.com/design/DAGi0dTdv5M/UUdOaXl1OI
  <source media="(prefers-color-scheme: light)" srcset="images/WIREFRAME OF PROJECT UPDATE.png">
  <img alt="wireframe" src="images/WIREFRAME OF PROJECT UPDATE.png">
 </picture>
-
 ### Progress Report
 
   Emoji Legend:
