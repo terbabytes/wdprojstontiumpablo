@@ -16,9 +16,15 @@ the Edge Lab? <br>
 ---
 
 ### Update Plan
-<p>The next few updates will be added in the game itself which is located in the legacy webpage. These updates include, but not limited to, addition of NPCS, custom dialogues for NPCs (dependent on the player's answer to the form), and the finalization of the tiles in the game itself. Additionally, all of the current webpages will be tweaked and finalized. I hope to make the website not as jarring to the next batches.  </p>
+<p>The next few updates will be added in the game itself which is located in the legacy webpage. These updates include, but not limited to, addition of NPCS, custom dialogues for NPCs (dependent on the player's answer to the form), and the finalization of the tiles in the game itself. Additionally, all of the current webpages will be tweaked and finalized. I hope to make the website not as jarring for the next batches.
+<br><br>
+Currently, the dialogue webpage has not been created yet and is still only just a wireframe. Since the about webpage is always updated for new changes, expect to see new updates there. The webpages that have been updated since the last project update are the legacy and about webpage. The rest will still be fixed after the implementation of the dialogue. For example, the notepad webpage will be updated to add two new characters, the player themselves and another character (to be revealed soon). 
+<br><br>
+The current flow/schedule of the project updates are okay with me, but they can still be improved on. I hope to work more on this project for the last few weeks, and I can catch up with the rest of the groups.
 
-**Dialogue Portion**
+  </p>
+
+### Dialogue Portion
 <br>
 Type of data: Basic info of player data
 purpose: for creating customizable dialogue with the NPCs in game
@@ -26,7 +32,7 @@ purpose: for creating customizable dialogue with the NPCs in game
 ```
 info {
    name: text-string,
-   pronouns: enumerated-string,
+   pronouns: enumerate-string,
    color: color-string,
    hobby: text-string,
    food: text-string,
@@ -43,6 +49,7 @@ link version (clearer flow): https://www.canva.com/design/DAGi0dTdv5M/UUdOaXl1OI
  <source media="(prefers-color-scheme: light)" srcset="images/WIREFRAME OF PROJECT UPDATE.png">
  <img alt="wireframe" src="images/WIREFRAME OF PROJECT UPDATE.png">
 </picture>
+
 ### Progress Report
 
   Emoji Legend:
@@ -57,7 +64,6 @@ link version (clearer flow): https://www.canva.com/design/DAGi0dTdv5M/UUdOaXl1OI
 
 **Current Progress for Each Page:**
 
-<ol>
   <details>
   <summary>Homepage (😁)</summary>
     <ul>
@@ -140,5 +146,3 @@ Files:
   </ol>
 
 </details>
-
-</ol>
