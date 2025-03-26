@@ -146,3 +146,19 @@ Files:
   </ol>
 
 </details>
+
+<br>
+
+<details>
+  <summary>Dialogue (😔)</summary>
+  <ul>
+    <li>Contains the portion where players will be asked for information about themselves (seen in the sample json code)</li>
+  <li>Will follow the wireframe format (to its best)</li>
+  <li>Proceeds to the Legacy Game webpage once all information has been put</li>
+  </ul>
+Files:
+  <ol>
+    <li>none yet</li>
+  </ol>
+
+</details>
