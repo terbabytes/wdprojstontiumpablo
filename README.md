@@ -15,10 +15,38 @@ the Edge Lab? <br>
 
 ---
 
+### Update Plan
+<p>The next few updates will be added in the game itself which is located in the legacy webpage. These updates include, but not limited to, addition of NPCS, custom dialogues for NPCs (dependent on the player's answer to the form), and the finalization of the tiles in the game itself. Additionally, all of the current webpages will be tweaked and finalized. I hope to make the website not as jarring to the next batches.  </p>
+
+**Dialogue Portion**
+<br>
+Type of data: Basic info of player data
+purpose: for creating customizable dialogue with the NPCs in game
+
+```
+info {
+   name: text-string,
+   pronouns: enumerated-string,
+   color: color-string,
+   hobby: text-string,
+   food: text-string,
+}
+
+//note: color can accept hexcode, RGB, and HSL
+```
+
+### Wireframe
+link version (clearer flow): https://www.canva.com/design/DAGi0dTdv5M/UUdOaXl1OIMARgjnBybJpA/edit?utm_content=DAGi0dTdv5M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+<br>image version:
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="images/WIREFRAME OF PROJECT UPDATE.png">
+ <source media="(prefers-color-scheme: light)" srcset="images/WIREFRAME OF PROJECT UPDATE.png">
+ <img alt="wireframe" src="images/WIREFRAME OF PROJECT UPDATE.png">
+</picture>
 
 ### Progress Report
 
-Emoji Legend:
+  Emoji Legend:
 
 - 😔 - barely any progress
 - 😐 - somewhat progress (simple js, html, and css)
@@ -26,61 +54,92 @@ Emoji Legend:
 - 😁 - almost done, in need of some tweaks
 - 😍 - done
 
+  <br>
+
 **Current Progress for Each Page:**
+
 <ol>
-  <li>Homepage (😁)</li>
-  <ul>
+  <details>
+  <summary>Homepage (😁)</summary>
+    <ul>
     <li>Background is supposed to give off an old camera</li>
     <li>Includes the main two buttons (Play, About)</li>
     <li>Will have audio and animations</li>
   </ul>
-  <li>Chapters Page (😐)</li>
-  <ul>
-    <li>Tentative number: 2 chapters</li>
-    <li>Unsure of what to put at chapter images</li>
+Files:
+  <ol>
+    <li>homepage.html</li>
+    <li>homepage.css</li>
+    <li>homepage.js</li>
+  </ol>
+</details>
+  
+  <br>
+
+  <details>
+    <summary>Chapters Page (😁)</summary>
+    <ul>
+    <li>Just one chapter</li>
     <li>Includes the redirect to the notepad page</li>
   </ul>
-  <li>About Page (😀)</li>
+Files:
+  <ol>
+    <li>chapters.html</li>
+    <li>chapters.css</li>
+    <li>chapters.js</li>
+  </ol>
+  </details>
+  
+<br>
+
+<details>
+  <summary>About Page (😁)</summary>
+
   <ul>
     <li>Includes description of project, about the author (me!), q&a, and socmed</li>
+    <li>Format of webpage isn't final</li>
   </ul>
-  <li>Notepad (😀)</li>
-  <ul>
+Files:
+  <ol>
+    <li>about.html</li>
+    <li>about.css</li>
+  </ol>
+</details>
+
+<br>
+
+<details>
+  <summary>Notepad (😍)</summary>
+    <ul>
     <li>Has some small information about each character seen</li>
-    <li>For now, only 3 characters are in the notepad (even the main player has not been added)</li>
-    <li>Unsure of format to be used, maybe background of the Edge Lab</li>
+    <li>For now, only 3 characters are in the notepad (main character will be added by the next progress update)</li>
   </ul>
-  <li>Chapter 1 (😀)</li>
+Files:
+  <ol>
+    <li>notepad.html</li>
+    <li>notepad.css</li>
+    <li>notepad.js</li>
+  </ol>
+
+</details>
+  
+ 
+
+  <br>
+  
+<details>
+  <summary>Legacy Game (😀)</summary>
   <ul>
-    <li>Very short demo of the story</li>
-    <li>Current color seen are not the final colors (check aesthetic part for context)</li>
-    <li>May be longer after YMSAT</li>
-    <li>This chapter must be finished before chapter 2 can be accessed</li>
+    <li>Will be very short to focus more on the tiles/format of the page</li>
+  <li>Current color seen are not the final colors</li>
   </ul>
-  <li>Chapter 2 (😔) > Will only be released by 4th quarter </li>
+Files:
+  <ol>
+    <li>ch1.html</li>
+    <li>ch1.css</li>
+    <li>ch1.js</li>
+  </ol>
+
+</details>
+
 </ol>
-
-### Aesthetics
-<p>This portion will cover aesthetics for both the overall website and the individual webpages.</p>
-
-**Overall Website**
-- Very hard to describe overall actually. Basically I could describe the aesthetic as like an indie pixel game with a horror-ish scheme, but not too horror (gore, jumpscares, etc) 
-
-**Homepage**
-- Something like the FNAF1 homepage (see image for context)
-
-**About page**
-- Format option: something out of an old camera menu?
-- Similar aesthetics to the homepage
-
-**Chapters page**
-- Similar aesthetics to the homepage
-
-**Notepad page**
-- Similar aesthetics to the homepage
-- Something with a background similar to the one in the homepage
-- Somewhat eerie vibes?
-
-**Chapter 1**
-- Similar aesthetics to the gameplay of Omori, Deltarune, etc. (etc because I can't think of other examples)
-- Less colorful the games mentioned, but still a different color scheme than the current Edge Lab
