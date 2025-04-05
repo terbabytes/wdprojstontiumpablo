@@ -10,8 +10,17 @@
   background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
 }
 
+.back-button {
+  position: fixed; /* Ensures it stays in place */
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  z-index: 100; /* Ensures it appears above other elements */
+}
+
 video {
   max-width: 90%; /* Adjust as needed */
   max-height: 90%; /* Adjust as needed */
+  z-index: 1; /* Ensure the video stays below the back button */
+  position: relative; /* Ensure proper stacking context */
 }
 

@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: "VT323", monospace;
+    background-color: #c7d8f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    border: 5px #6b8fcf solid;
+    width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #6b8fcf;
+    cursor: pointer;
+}
+
+
+.form-card {
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: #4a6fa5;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+label {
+    font-size: 25px;
+    color: #4a6fa5;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px; /* Adjusted padding for consistency */
+    font-size: 20px;
+    font-family: "VT323", monospace;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "VT323", monospace;
+}
+
+.continue {
+    background-color: #6b8fcf;
+    color: white;
+}
+
+.delete {
+    background-color: #f08080;
+    color: white;
+}
+
+.character {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background: url('character-placeholder.png') no-repeat center center;
+    background-size: contain;
+}

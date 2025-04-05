@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Info</title>
+    <link rel="stylesheet" href="form.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="back-button">
+        <figure>
+          <a href="chapters.html"
+            ><img
+              src="images/back-arw.png"
+              alt="placeholder"
+              style="width: 100px; height: 100px"
+          /></a>
+        </figure>
+      </div>
+    <div class="container">
+        <div class="form-card">
+            <h1>BASIC INFO</h1>
+            <form action=ch1.html method="get">
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname">
+
+                <label for="pronouns">Pronouns:</label>
+                <select id="pronouns" name="pronouns">
+                    <option value="he">He</option>
+                    <option value="she">She</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="color">Favorite color:</label>
+                <input type="text" id="color" name="color">
+
+                <label for="food">Favorite food:</label>
+                <input type="text" id="food" name="food">
+
+                <label for="hobby">Favorite hobby:</label>
+                <input type="text" id="hobby" name="hobby">
+
+                <div class="buttons">
+                    <button type="submit" class="continue">CONTINUE</button>
+                    <button type="reset" class="delete">DELETE</button>
+                </div>
+            </form>
+        </div>
+        <div class="character"></div>
+    </div>
+</body>
+</html>

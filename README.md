@@ -1,164 +1,148 @@
 # Eidolon
 
-### Made by: Tara Laraine S. Pablo, 9-Strontium
+### Created by: Tara Laraine S. Pablo, 9-Strontium
 
 ---
 
-**Description:**
+## Description
 
-> Eidolon is a pixel game set inside of the Edge Lab of Pisay.<br /><br />You play as Elijah, a ghost who recently just died inside of the Edge Lab
-and cannot leave the room. You cannot pass on to the afterlife until
-you have figured out how you died. The only catch? You have no memory
-of your death. <br/><br/> Will you be able to figure out your own
-death or will you live the rest of eternity as a wandering inside of
-the Edge Lab? <br>
+**Eidolon** is a pixel game set inside the Edge Lab of Pisay.  
+You play as Elijah, a ghost who recently died inside the Edge Lab and cannot leave the room. You cannot pass on to the afterlife until you have figured out how you died. The only catch? You have no memory of your death.  
+
+Will you be able to uncover the mystery of your death, or will you spend eternity wandering inside the Edge Lab?
 
 ---
 
-### Update Plan
-<p>The next few updates will be added in the game itself which is located in the legacy webpage. These updates include, but not limited to, addition of NPCS, custom dialogues for NPCs (dependent on the player's answer to the form), and the finalization of the tiles in the game itself. Additionally, all of the current webpages will be tweaked and finalized. I hope to make the website not as jarring for the next batches.
-<br><br>
-Currently, the dialogue webpage has not been created yet and is still only just a wireframe. Since the about webpage is always updated for new changes, expect to see new updates there. The webpages that have been updated since the last project update are the legacy and about webpage. The rest will still be fixed after the implementation of the dialogue. For example, the notepad webpage will be updated to add two new characters, the player themselves and another character (to be revealed soon). 
-<br><br>
-The current flow/schedule of the project updates are okay with me, but they can still be improved on. I hope to work more on this project for the last few weeks, and I can catch up with the rest of the groups.
+## Update Plan
 
-  </p>
+The next updates will focus on the game itself, located in the legacy webpage. These updates include:
 
-### Dialogue Portion
-<br>
-Type of data: Basic info of player data
-purpose: for creating customizable dialogue with the NPCs in game
+- Addition of NPCs.
+- Custom dialogues for NPCs (dependent on the player's answers to the form).
+- Finalization of the tiles in the game.
 
-```
+Additionally, all current webpages will be tweaked and finalized to improve the user experience. The dialogue webpage is still in the wireframe stage and has not been implemented yet. Updates to the **About** webpage will continue as new changes are made.  
+
+### Planned Updates:
+- **Notepad Webpage**: Add two new characters (the player and another character to be revealed).
+- **Dialogue Webpage**: Implement customizable dialogue based on player input.
+
+The current project schedule is manageable but could be improved. I aim to complete this project in the coming weeks and stay on track with the rest of the groups.
+
+---
+
+## Dialogue Portion
+
+**Type of Data**: Basic player information.  
+**Purpose**: To create customizable dialogue with NPCs in the game.
+
+```json
 info {
    name: text-string,
    pronouns: enumerate-string,
    color: color-string,
    hobby: text-string,
-   food: text-string,
+   food: text-string
 }
 
-//note: color can accept hexcode, RGB, and HSL
+// Note: "color" can accept hex codes, RGB, and HSL values.
 ```
 
-### Wireframe
-link version (clearer flow): https://www.canva.com/design/DAGi0dTdv5M/UUdOaXl1OIMARgjnBybJpA/edit?utm_content=DAGi0dTdv5M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-<br>image version:
+---
+
+## Wireframe
+
+**Link to Wireframe**: [Canva Wireframe](https://www.canva.com/design/DAGi0dTdv5M/UUdOaXl1OIMARgjnBybJpA/edit?utm_content=DAGi0dTdv5M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+
+**Image Version**:  
 <picture>
  <source media="(prefers-color-scheme: dark)" srcset="images/WIREFRAME OF PROJECT UPDATE.png">
  <source media="(prefers-color-scheme: light)" srcset="images/WIREFRAME OF PROJECT UPDATE.png">
- <img alt="wireframe" src="images/WIREFRAME OF PROJECT UPDATE.png">
+ <img alt="Wireframe" src="images/WIREFRAME OF PROJECT UPDATE.png">
 </picture>
 
-### Progress Report
+---
 
-  Emoji Legend:
+## Progress Report
 
-- 😔 - barely any progress
-- 😐 - somewhat progress (simple js, html, and css)
-- 😀 - good progress, in the middle of making
-- 😁 - almost done, in need of some tweaks
-- 😍 - done
+### Emoji Legend:
+- 😔 - Barely any progress.
+- 😐 - Some progress (basic HTML, CSS, or JS).
+- 😀 - Good progress, in development.
+- 😁 - Almost complete, needs minor tweaks.
+- 😍 - Complete.
 
-  <br>
+---
 
-**Current Progress for Each Page:**
+### Current Progress for Each Page:
 
-  <details>
+<details>
   <summary>Homepage (😁)</summary>
-    <ul>
-    <li>Background is supposed to give off an old camera</li>
-    <li>Includes the main two buttons (Play, About)</li>
-    <li>Will have audio and animations</li>
-  </ul>
-Files:
-  <ol>
-    <li>homepage.html</li>
-    <li>homepage.css</li>
-    <li>homepage.js</li>
-  </ol>
-</details>
-  
-  <br>
+  **Description**:
+  - Background designed to resemble an old camera.
+  - Includes main buttons (Play, About).
+  - Features audio and animations.
 
-  <details>
-    <summary>Chapters Page (😁)</summary>
-    <ul>
-    <li>Just one chapter</li>
-    <li>Includes the redirect to the notepad page</li>
-  </ul>
-Files:
-  <ol>
-    <li>chapters.html</li>
-    <li>chapters.css</li>
-    <li>chapters.js</li>
-  </ol>
-  </details>
-  
-<br>
+  **Files**:
+  - `homepage.html`
+  - `homepage.css`
+  - `homepage.js`
+</details>
+
+<details>
+  <summary>Chapters Page (😁)</summary>
+  **Description**:
+  - Contains one chapter.
+  - Includes a redirect to the notepad page.
+
+  **Files**:
+  - `chapters.html`
+  - `chapters.css`
+  - `chapters.js`
+</details>
 
 <details>
   <summary>About Page (😁)</summary>
+  **Description**:
+  - Includes project description, author information, Q&A, and social media links.
+  - Webpage format is not finalized.
 
-  <ul>
-    <li>Includes description of project, about the author (me!), q&a, and socmed</li>
-    <li>Format of webpage isn't final</li>
-  </ul>
-Files:
-  <ol>
-    <li>about.html</li>
-    <li>about.css</li>
-  </ol>
+  **Files**:
+  - `about.html`
+  - `about.css`
 </details>
-
-<br>
 
 <details>
   <summary>Notepad (😍)</summary>
-    <ul>
-    <li>Has some small information about each character seen</li>
-    <li>For now, only 3 characters are in the notepad (main character will be added by the next progress update)</li>
-  </ul>
-Files:
-  <ol>
-    <li>notepad.html</li>
-    <li>notepad.css</li>
-    <li>notepad.js</li>
-  </ol>
+  **Description**:
+  - Displays information about each character.
+  - Currently includes three characters (main character to be added in the next update).
 
+  **Files**:
+  - `notepad.html`
+  - `notepad.css`
+  - `notepad.js`
 </details>
-  
- 
 
-  <br>
-  
 <details>
   <summary>Legacy Game (😀)</summary>
-  <ul>
-    <li>Will be very short to focus more on the tiles/format of the page</li>
-  <li>Current color seen are not the final colors</li>
-  </ul>
-Files:
-  <ol>
-    <li>ch1.html</li>
-    <li>ch1.css</li>
-    <li>ch1.js</li>
-  </ol>
+  **Description**:
+  - Short gameplay focused on tile and page formatting.
+  - Current colors are placeholders and not final.
 
+  **Files**:
+  - `ch1.html`
+  - `ch1.css`
+  - `ch1.js`
 </details>
-
-<br>
 
 <details>
   <summary>Dialogue (😔)</summary>
-  <ul>
-    <li>Contains the portion where players will be asked for information about themselves (seen in the sample json code)</li>
-  <li>Will follow the wireframe format (to its best)</li>
-  <li>Proceeds to the Legacy Game webpage once all information has been put</li>
-  </ul>
-Files:
-  <ol>
-    <li>none yet</li>
-  </ol>
+  **Description**:
+  - Collects player information (as seen in the sample JSON code).
+  - Will follow the wireframe format.
+  - Redirects to the Legacy Game webpage after data submission.
 
+  **Files**:
+  - None yet.
 </details>

@@ -368,69 +368,71 @@ function animate() {
   boundaries.forEach((boundary) => {
     boundary.draw();
   });
-  interactive.forEach(interactiveObj => { // Draw dead bodies
+  interactive.forEach((interactiveObj) => {
     interactiveObj.draw();
-});
+  });
   player.draw();
-
 
   let moving = true;
   player.moving = false;
-  
-  if (sequence.initiated) return
-// activate a battle
-  if(keys.w.pressed || keys.a.pressed || keys.d.pressed || keys.s.pressed) {
 
+  if (sequence.initiated) return;
+
+  // Check for interaction with interactive objects
+  if (keys.w.pressed || keys.a.pressed || keys.d.pressed || keys.s.pressed) {
     for (let i = 0; i < interactive.length; i++) {
       const part = interactive[i];
-      const overlappingArea = 
-      (Math.min(
-        player.position.x + player.width, 
-        part.position.x + part.width
-      ) - Math.max(player.position.x, part.position.x)) * 
-      (Math.min(
-        player.position.y + player.height, 
-        part.position.y + part.height
-      ) - 
-      Math.max(player.position.y, part.position. y))
+      const overlappingArea =
+        (Math.min(
+          player.position.x + player.width,
+          part.position.x + part.width
+        ) -
+          Math.max(player.position.x, part.position.x)) *
+        (Math.min(
+          player.position.y + player.height,
+          part.position.y + part.height
+        ) -
+          Math.max(player.position.y, part.position.y));
+
       if (
         rectangularCollision({
           rectangle1: player,
-          rectangle2: part
-        }) && 
+          rectangle2: part,
+        }) &&
         overlappingArea > (player.width * player.height) / 2
       ) {
-        console.log("dead body sequence")
-        //deactivate current animation loop
-        window.cancelAnimationFrame(animationId)
-        sequence.initiated = true
-        gsap.to('#overlappingDiv', {
+        console.log("dead body sequence");
+        // Deactivate current animation loop
+        window.cancelAnimationFrame(animationId);
+        sequence.initiated = true;
+
+        // Transition to battle sequence
+        gsap.to("#overlappingDiv", {
           opacity: 1,
           repeat: 2,
           yoyo: true,
           duration: 0.25,
           onComplete() {
-            gsap.to('#overlappingDiv', {
+            gsap.to("#overlappingDiv", {
               opacity: 1,
               duration: 0.25,
               onComplete() {
-                //activate a new animation
-                animateSequence()
-                gsap.to('#overlappingDiv', {
+                // Activate the battle animation
+                animateBattle();
+                gsap.to("#overlappingDiv", {
                   opacity: 0,
                   duration: 0.25,
-                })
-              }
-            })
-          }
-        })
+                });
+              },
+            });
+          },
+        });
         break;
       }
     }
   }
 
-
-  
+  // Movement logic
   if (keys.w.pressed && lastKey === "w") {
     player.moving = true;
     player.image = player.sprites.up;
@@ -448,17 +450,13 @@ function animate() {
           },
         })
       ) {
-        console.log("colliding");
         moving = false;
         break;
       }
     }
-
-
-
     if (moving) {
-      movables.forEach((movables) => {
-        movables.position.y += 5;
+      movables.forEach((movable) => {
+        movable.position.y += 5;
       });
     }
   } else if (keys.s.pressed && lastKey === "s") {
@@ -478,14 +476,13 @@ function animate() {
           },
         })
       ) {
-        console.log("colliding");
         moving = false;
         break;
       }
     }
     if (moving) {
-      movables.forEach((movables) => {
-        movables.position.y -= 5;
+      movables.forEach((movable) => {
+        movable.position.y -= 5;
       });
     }
   } else if (keys.a.pressed && lastKey === "a") {
@@ -505,14 +502,13 @@ function animate() {
           },
         })
       ) {
-        console.log("colliding");
         moving = false;
         break;
       }
     }
     if (moving) {
-      movables.forEach((movables) => {
-        movables.position.x += 5;
+      movables.forEach((movable) => {
+        movable.position.x += 5;
       });
     }
   } else if (keys.d.pressed && lastKey === "d") {
@@ -532,14 +528,13 @@ function animate() {
           },
         })
       ) {
-        console.log("colliding");
         moving = false;
         break;
       }
     }
     if (moving) {
-      movables.forEach((movables) => {
-        movables.position.x -= 5;
+      movables.forEach((movable) => {
+        movable.position.x -= 5;
       });
     }
   }
@@ -548,7 +543,7 @@ function animate() {
 animate();
 
 const battleBackgroundImage = new Image(); // Corrected variable name
-battleBackgroundImage.src = './img/battleBackground.png';
+battleBackgroundImage.src = 'images/placeholderimg.png';
 
 const battleBackground = new Sprite({
   position: {
@@ -559,9 +554,13 @@ const battleBackground = new Sprite({
 });
 
 function animateBattle() {
-  window.requestAnimationFrame(animateBattle);
+  // Clear the canvas before drawing
+  c.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Draw the battle background
   battleBackground.draw();
 }
+
 
 let lastKey = "";
 window.addEventListener("keydown", (e) => {

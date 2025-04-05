@@ -20,17 +20,17 @@ canvas {
 }
 
 .playcutscene {
-  background:url("images/cutscene.png") no-repeat;
-  width: 500px;
-  height: 500px;
-  transform: translateY(-30%) translateX(-30%) scale(25%);
+  background: url("images/cutscene.png") no-repeat center center;
+  background-size: contain; /* Ensure the image scales properly */
+  width: 150px; /* Adjust width */
+  height: 150px; /* Adjust height */
+  position: fixed; /* Fix position on the screen */
+
 }
 
 .playcutscene:hover {
-  background:url("images/cutscene-hover.png") no-repeat;
-  width: 500px;
-  height: 500px;
-  transform: translateY(-30%) translateX(-30%) scale(25%);
+  background: url("images/cutscene-hover.png") no-repeat center center;
+  background-size: contain; /* Ensure the hover image scales properly */
 }
 
 footer {
