@@ -7,10 +7,9 @@ body {
   margin: 0;
   text-align: center;
   flex-direction: column;
-  font-family: "VT323", monospace;
-  background-color: #ce1e37;
-  color:white;
-  margin: 0;
+  font-family: 'VT323', monospace;
+  background-color: #1a1a1a;
+  color: #ffffff;
   padding: 0;
 }
 
@@ -18,7 +17,6 @@ body {
   position: fixed;
   top: 12%;
   left: -1%;
-  
 }
 
 section {
@@ -33,99 +31,120 @@ section {
 
 .navLinks ul {
   list-style: none;
-  margin: 0; /* Remove default ul margins */
-  padding: 0; /* Remove default ul padding */
-  text-align: center; /* Center the links horizontally if you want */
-  display: flex; /* Make the list a flex container too */
-  justify-content: center; /* Center the list items */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .navLinks {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    z-index: 100;
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 80px; /* Set your desired height here (e.g., 80px) */
-    padding: 0 20px; /* Add horizontal padding if needed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  border-bottom: 2px solid #666;
 }
 
 .navLinks a {
-  float: left;
-  color: white;
+  color: #ffffff;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 40px;
-  background-color: black;
-    color: white;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .navLinks a:hover {
-  background-color: white;
-  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-nav a[href="#AboutUs"].active {
-  background-color: #ce1e37; /* About Us link active color */
-  color: white;
+nav a[href='#AboutUs'].active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  color: #ffffff;
 }
 
-nav a[href="#FAQs"].active {
-  background-color: #8a2c97; /* FAQs link active color */
-  color: white;
+nav a[href='#FAQs'].active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  color: #ffffff;
 }
 
-nav a[href="#SocialMedia"].active {
-  background-color: #efb145; /* Social Media link active color */
-  color: black;
+nav a[href='#SocialMedia'].active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  color: #ffffff;
 }
-
 
 #project-text {
-font-size: 40px;
+  font-size: 40px;
+  color: #ffffff;
 }
 
 .project-portion {
   width: 80vw;
-  border: 5px solid white;
-  padding: 10px;
+  border: 2px solid #666;
+  padding: 20px;
   margin-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .project-portion > details > summary {
   font-size: 50px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.project-portion > details > summary:hover {
+  color: #cccccc;
 }
 
 li {
   font-size: 40px;
   text-align: left;
+  color: #ffffff;
 }
-
 
 .hidden {
   display: none;
 }
 
-.q{
+.q {
   width: 900px;
 }
 
 .question {
-  background-color: white;
-  color: #8a2c97;
-  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 15px;
   font-size: 25px;
   text-align: left;
+  border: 2px solid #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.question:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 details {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-
 
 .a {
   display: flex;
@@ -150,63 +169,55 @@ details {
 
 #ptext {
   font-size: 25px;
+  line-height: 1.5;
+  color: #ffffff;
 }
 
 .project-container {
   width: 75%;
-  color: white;
-  background-color: #ce1e37;
-  padding: 20px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
   margin-left: 11%;
-
-  border-color: white;
-  border-width: 5px;
-  border-style: solid;
+  border: 2px solid #666;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .la,
 .ta {
   width: 550px;
-  background-color: #8a2c97;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-
-  border-color: white;
-  border-width: 5px;
-  border-style: solid;
+  border: 2px solid #666;
+  color: #ffffff;
 }
-
 
 .tabtus {
   width: 50vw;
-  background-color: #ce1e37;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   text-align: left;
-
-  font-size:40px;
-  
-
-  border-color: white;
-  border-width: 5px;
-  border-style: solid;
+  font-size: 40px;
+  border: 2px solid #666;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 .tabtus ul {
   list-style: none;
 }
 
-
-
 .abt-us {
   display: flex;
-  align-items: center; /* Align image and text vertically */
-  gap: 20px; /* Space between image and text */
-  justify-content: center; /* Center everything horizontally */
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
 
 .dev-profile {
   max-width: 500px;
   max-height: auto;
-  transform: scale(0.8); /* Adjust as needed */
+  transform: scale(0.8);
 }
 
 .dev-profile figure {
@@ -220,30 +231,37 @@ details {
   display: block;
   max-width: 100%;
   height: auto;
+  border: 2px solid #666;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .lsm,
 .tsm {
   width: 50vw;
   height: 13vh;
-  background-color: #efb145;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   text-align: left;
   font-size: 30px;
-  color: white;
-
-  border-color: white;
-  border-width: 5px;
-  border-style: solid;
+  color: #ffffff;
+  border: 2px solid #666;
 }
 
 h2 {
   font-size: 80px;
-
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .project-portion a {
-  color: white
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-portion a:hover {
+  color: #cccccc;
+  text-decoration: underline;
 }
 
 .project-portion table {
@@ -251,16 +269,17 @@ h2 {
   border-collapse: collapse;
   table-layout: fixed;
   margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-portion th,
 .project-portion td {
-  border: 3px solid white;
-  padding: 10px;
+  border: 2px solid #666;
+  padding: 15px;
   text-align: left;
   box-sizing: border-box;
+  color: #ffffff;
 }
-
 
 .project-portion table col.date {
   width: 150px;
@@ -268,13 +287,15 @@ h2 {
 
 .project-portion th {
   font-size: 40px;
+  color: #ffffff;
 }
 
 .insta {
-  background:url("images/ig-icon.png") no-repeat;
+  background: url('images/ig-icon.png') no-repeat;
   width: 300px;
   height: 321px;
   transform: translateY(-30%) translateX(30%) scale(30%);
+  transition: all 0.3s ease;
 }
 
 .socmed {
@@ -282,27 +303,28 @@ h2 {
 }
 
 .insta:hover {
-  background:url("images/ig-icon-hover.png") no-repeat;
+  background: url('images/ig-icon-hover.png') no-repeat;
   width: 300px;
   height: 321px;
   transform: translateY(-30%) translateX(30%) scale(30%);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
 .twitter {
-  background:url("images/x-icon.png") no-repeat;
+  background: url('images/x-icon.png') no-repeat;
   width: 300px;
   height: 321px;
   transform: translateY(-30%) translateX(-30%) scale(30%);
+  transition: all 0.3s ease;
 }
 
 .twitter:hover {
-  background:url("images/x-icon-hover.png") no-repeat;
+  background: url('images/x-icon-hover.png') no-repeat;
   width: 300px;
   height: 321px;
   transform: translateY(-30%) translateX(-30%) scale(30%);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
-
-
 
 .email-container {
   transform: translateY(-180%);
@@ -310,30 +332,36 @@ h2 {
 
 .email-container > p {
   font-size: 30px;
+  color: #ffffff;
 }
 
 .social-media-container > p {
-  font-size: 30px
+  font-size: 30px;
+  color: #ffffff;
 }
 
 .emails {
-  position:relative;
+  position: relative;
   font-size: 30px;
   transform: translateX(10%) translateY(-30%);
   max-width: 80%;
 }
 
-.emails a[href^="mailto:"] {
-  color: white; /* Or a suitable color */
+.emails a[href^='mailto:'] {
+  color: #ffffff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.emails a[href^="mailto:"]:hover {
+.emails a[href^='mailto:']:hover {
+  color: #cccccc;
   text-decoration: underline;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
-
 
 footer {
-  color:white;
-  position:relative;
+  color: #888;
+  position: relative;
+  margin-top: 40px;
+  font-size: 20px;
 }

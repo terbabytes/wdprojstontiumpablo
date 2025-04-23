@@ -166,6 +166,58 @@ const deadBody = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
+
+const npcs = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 124, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];  
 const collisionsMap = [];
 for (let i = 0; i < collisions.length; i += 51) {
   collisionsMap.push(collisions.slice(i, 51 + i));
@@ -176,18 +228,23 @@ for (let i = 0; i < deadBody.length; i += 51) {
   interactiveMap.push(deadBody.slice(i, 51 + i));
 }
 
-console.log(interactiveMap)
+const npcMap = [];
+for (let i = 0; i < npcs.length; i += 51) {
+  npcMap.push(npcs.slice(i, 51 + i));
+}
+
 
 class Boundary {
-  constructor({ position }) {
+  constructor({ position, dialogue = [] }) { // Add dialogue as a parameter with a default value
     this.position = position;
     this.width = 88;
     this.height = 88;
+    this.dialogue = dialogue; // Store the dialogue
   }
 
   draw() {
     c.fillStyle = "rgba(255,0,0,0)";
-    c.fillRect(this.position.x,this.position.y, this.width, this.height);
+    c.fillRect(this.position.x, this.position.y, this.width, this.height);
   }
 }
 
@@ -232,7 +289,6 @@ const interactive = []
 
 interactiveMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
-    
     if (symbol === 1817) {
       interactive.push(
         new Boundary({
@@ -243,11 +299,42 @@ interactiveMap.forEach((row, i) => {
         })
       );
     }
-    
   });
 });
 
 console.log(interactive)
+
+const npcTest = []
+
+npcMap.forEach((row, i) => {
+  row.forEach((symbol, j) => {
+    if (symbol === 124) {
+      npcTest.push(
+        new Boundary({
+          position: {
+            x: j * Boundary.width + offset.x,
+            y: i * Boundary.height + offset.y,
+          },
+          dialogue: ["I heard they loved to play tetris with Rico"], // Add dialogue here
+          interacted: false, // Track if this NPC has been interacted with
+        })
+      );
+    }
+
+    if (symbol === 90) {
+      npcTest.push(
+        new Boundary({
+          position: {
+            x: j * Boundary.width + offset.x,
+            y: i * Boundary.height + offset.y,
+          },
+          dialogue: ["They were such a good friend to me"], // Add dialogue here
+          interacted: false, // Track if this NPC has been interacted with
+        })
+      );
+    }
+  });
+});
 
 const image = new Image();
 image.src =
@@ -347,20 +434,27 @@ const keys = {
   },
 };
 
-const movables = [background, ...boundaries, ...interactive];
+const movables = [background, ...boundaries, ...interactive, ...npcTest];
 
-function rectangularCollision({ rectangle1, rectangle2 }) {
+function rectangularCollision({ rectangle1, rectangle2, allowance = 5 }) {
   return (
-    rectangle1.position.x + rectangle1.width >= rectangle2.position.x &&
-    rectangle1.position.x <= rectangle2.position.x + rectangle2.width &&
-    rectangle1.position.y <= rectangle2.position.y + rectangle2.height &&
-    rectangle1.position.y + rectangle1.height >= rectangle2.position.y
+    rectangle1.position.x + rectangle1.width >= rectangle2.position.x - allowance &&
+    rectangle1.position.x <= rectangle2.position.x + rectangle2.width + allowance &&
+    rectangle1.position.y + rectangle1.height >= rectangle2.position.y - allowance &&
+    rectangle1.position.y <= rectangle2.position.y + rectangle2.height + allowance
   );
 }
 
 const sequence = {
   initiated: false,
 }
+
+//test for npc
+let npcInteractionOccurred = false; // Flag to track if interaction has occurred
+let playerLocked = false; // Flag to lock the player in place
+
+let animationId; // Declare animationId globally
+let activeNpc = null; // Track the currently
 
 function animate() {
   const animationId = window.requestAnimationFrame(animate);
@@ -371,66 +465,283 @@ function animate() {
   interactive.forEach((interactiveObj) => {
     interactiveObj.draw();
   });
+
+  npcTest.forEach((npcObj) => {
+    npcObj.draw();
+  });
+
   player.draw();
 
   let moving = true;
   player.moving = false;
 
-  if (sequence.initiated) return;
+  if (sequence.initiated) return; // Stop the main animation loop if a sequence is initiated
 
-  // Check for interaction with interactive objects
-  if (keys.w.pressed || keys.a.pressed || keys.d.pressed || keys.s.pressed) {
-    for (let i = 0; i < interactive.length; i++) {
-      const part = interactive[i];
-      const overlappingArea =
-        (Math.min(
-          player.position.x + player.width,
-          part.position.x + part.width
-        ) -
-          Math.max(player.position.x, part.position.x)) *
-        (Math.min(
-          player.position.y + player.height,
-          part.position.y + part.height
-        ) -
-          Math.max(player.position.y, part.position.y));
+  // Prevent movement if the player is locked
+  if (playerLocked) return;
 
-      if (
-        rectangularCollision({
-          rectangle1: player,
-          rectangle2: part,
-        }) &&
-        overlappingArea > (player.width * player.height) / 2
-      ) {
-        console.log("dead body sequence");
-        // Deactivate current animation loop
-        window.cancelAnimationFrame(animationId);
-        sequence.initiated = true;
+ 
 
-        // Transition to battle sequence
-        gsap.to("#overlappingDiv", {
-          opacity: 1,
-          repeat: 2,
-          yoyo: true,
-          duration: 0.25,
-          onComplete() {
-            gsap.to("#overlappingDiv", {
-              opacity: 1,
-              duration: 0.25,
-              onComplete() {
-                // Activate the battle animation
-                animateBattle();
-                gsap.to("#overlappingDiv", {
-                  opacity: 0,
-                  duration: 0.25,
-                });
-              },
-            });
-          },
-        });
-        break;
-      }
+// Test for NPC interaction
+
+if (keys.w.pressed || keys.a.pressed || keys.s.pressed || keys.d.pressed) {
+  for (let i = 0; i < interactive.length; i++) {
+    const part = interactive[i]
+    const overlappingArea =
+      (Math.min(
+        player.position.x + player.width,
+        part.position.x + part.width
+      ) -
+        Math.max(player.position.x, part.position.x)) *
+      (Math.min(
+        player.position.y + player.height,
+        part.position.y + part.height
+      ) -
+        Math.max(player.position.y, part.position.y))
+    if (rectangularCollision({
+        rectangle1: player,
+        rectangle2: part
+      }) &&
+      overlappingArea > (player.width * player.height) / 2) {
+      // deactivate current animation loop
+      window.cancelAnimationFrame(animationId)
+
+      sequence.initiated = true
+      gsap.to('#overlappingDiv', {
+        opacity: 1,
+        repeat: 1,
+        yoyo: true,
+        duration: 0.3,
+        onComplete() {
+          gsap.to('#overlappingDiv', {
+            opacity: 1,
+            duration: 0.2,
+            onComplete() {
+              // activate a new animation loop
+              animateBattle()
+              gsap.to('#overlappingDiv', {
+                opacity: 0,
+                duration: 0.2
+              })
+            }
+          })
+        }
+      })
+      break
     }
   }
+
+  for (let i = 0; i < npcTest.length; i++) {
+    const npc = npcTest[i];
+  
+    if (
+      rectangularCollision({
+        rectangle1: player,
+        rectangle2: npc,
+        allowance: 7, // Allow a buffer of 10 pixels
+      }) &&
+      !npc.interacted // Ensure interaction happens only once per NPC
+    ) {
+      npc.interacted = true; // Mark this NPC as interacted
+      playerLocked = true;
+      console.log("Initiate dialogue with NPC:");
+      if (npc.dialogue && npc.dialogue.length > 0) {
+        npc.dialogue.forEach((line) => {
+          console.log(`NPC: ${line}`);
+        });
+      } else {
+        console.log("NPC has nothing to say.");
+      }
+  
+      activeNpc = npc; // Set the active NPC for spacebar interaction
+      break; // Exit the loop after finding the first overlapping NPC
+    }
+  }
+}
+
+
+function handleSpacebarInteraction(npc) {
+  activeNpc = npc; // Set the active NPC
+}
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === " " && activeNpc) {
+    activeNpc.interacted = false; // Reset interaction for this NPC
+    activeNpc = null; // Clear the active NPC after interaction
+    playerLocked = false;
+  }
+});
+
+// Movement logic
+if (keys.w.pressed && lastKey === "w") {
+  player.moving = true;
+  player.image = player.sprites.up;
+
+  const predictedPosition = { ...player.position, y: player.position.y - 4 };
+
+  let collisionDetected = false;
+  for (let i = 0; i < boundaries.length; i++) {
+    const boundary = boundaries[i];
+    if (
+      rectangularCollision({
+        rectangle1: { ...player, position: predictedPosition },
+        rectangle2: boundary,
+      })
+    ) {
+      collisionDetected = true;
+      break;
+    }
+  }
+
+  
+
+  for (let i = 0; i < npcTest.length; i++) {
+    const npc = npcTest[i];
+    if (
+      rectangularCollision({
+        rectangle1: { ...player, position: predictedPosition },
+        rectangle2: npc,
+      })
+    ) {
+      collisionDetected = true;
+      break;
+    }
+  }
+
+  if (!collisionDetected) {
+    movables.forEach((movable) => {
+      movable.position.y += 5;
+    });
+  } else {
+    player.moving = false;
+  }
+} else if (keys.s.pressed && lastKey === "s") {
+  player.moving = true;
+  player.image = player.sprites.down;
+
+  const predictedPosition = { ...player.position, y: player.position.y + 4 };
+
+  let collisionDetected = false;
+  for (let i = 0; i < boundaries.length; i++) {
+    const boundary = boundaries[i];
+    if (
+      rectangularCollision({
+        rectangle1: { ...player, position: predictedPosition },
+        rectangle2: boundary,
+      })
+    ) {
+      collisionDetected = true;
+      break;
+    }
+  }
+
+  for (let i = 0; i < npcTest.length; i++) {
+    const npc = npcTest[i];
+    if (
+      rectangularCollision({
+        rectangle1: { ...player, position: predictedPosition },
+        rectangle2: npc,
+      })
+    ) {
+      collisionDetected = true;
+      break;
+    }
+  }
+
+  if (!collisionDetected) {
+    movables.forEach((movable) => {
+      movable.position.y -= 5;
+    });
+  } else {
+    player.moving = false;
+  }
+} else if (keys.a.pressed && lastKey === "a") {
+  player.moving = true;
+  player.image = player.sprites.left;
+
+  const predictedPosition = { ...player.position, x: player.position.x - 4 };
+
+  let collisionDetected = false;
+  for (let i = 0; i < boundaries.length; i++) {
+    const boundary = boundaries[i];
+    if (
+      rectangularCollision({
+        rectangle1: { ...player, position: predictedPosition },
+        rectangle2: boundary,
+      })
+    ) {
+      collisionDetected = true;
+      break;
+    }
+  }
+
+  for (let i = 0; i < npcTest.length; i++) {
+    const npc = npcTest[i];
+    if (
+      rectangularCollision({
+        rectangle1: { ...player, position: predictedPosition },
+        rectangle2: npc,
+      })
+    ) {
+      collisionDetected = true;
+      break;
+    }
+  }
+
+  if (!collisionDetected) {
+    movables.forEach((movable) => {
+      movable.position.x += 5;
+    });
+  } else {
+    player.moving = false;
+  }
+} else if (keys.d.pressed && lastKey === "d") {
+  player.moving = true;
+  player.image = player.sprites.right;
+
+  const predictedPosition = { ...player.position, x: player.position.x + 4 };
+
+  let collisionDetected = false;
+  for (let i = 0; i < boundaries.length; i++) {
+    const boundary = boundaries[i];
+    if (
+      rectangularCollision({
+        rectangle1: { ...player, position: predictedPosition },
+        rectangle2: boundary,
+      })
+    ) {
+      collisionDetected = true;
+      break;
+    }
+  }
+
+  for (let i = 0; i < npcTest.length; i++) {
+    const npc = npcTest[i];
+    if (
+      rectangularCollision({
+        rectangle1: { ...player, position: predictedPosition },
+        rectangle2: npc,
+      })
+    ) {
+      collisionDetected = true;
+      break;
+    }
+  }
+
+  if (!collisionDetected) {
+    movables.forEach((movable) => {
+      movable.position.x -= 5;
+    });
+  } else {
+    player.moving = false;
+  }
+}
+
+
+
+
+
+}
 
   // Movement logic
   if (keys.w.pressed && lastKey === "w") {
@@ -538,28 +849,30 @@ function animate() {
       });
     }
   }
-}
+
+  const battleBackgroundImage = new Image(); // Corrected variable name
+  battleBackgroundImage.src = 'images/placeholderimg.png';
+  
+  const battleBackground = new Sprite({
+    position: {
+      x: 0,
+      y: 0
+    },
+    image: battleBackgroundImage // Use the correctly named variable
+  });
+  
+  function animateBattle() {
+    // Clear the canvas before drawing
+    c.clearRect(0, 0, canvas.width, canvas.height);
+  
+    // Draw the battle background
+    battleBackground.draw();
+  }
+  
+
 
 animate();
 
-const battleBackgroundImage = new Image(); // Corrected variable name
-battleBackgroundImage.src = 'images/placeholderimg.png';
-
-const battleBackground = new Sprite({
-  position: {
-    x: 0,
-    y: 0
-  },
-  image: battleBackgroundImage // Use the correctly named variable
-});
-
-function animateBattle() {
-  // Clear the canvas before drawing
-  c.clearRect(0, 0, canvas.width, canvas.height);
-
-  // Draw the battle background
-  battleBackground.draw();
-}
 
 
 let lastKey = "";
