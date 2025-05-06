@@ -1,0 +1,47 @@
+<div class="back-button">
+    <figure>
+        <a href="chapters.html">
+            <img src="images/back-arw.png" alt="placeholder" style="width: 100px; height: 100px">
+        </a>
+    </figure>
+</div>
+<div class="container">
+    <div class="form-card">
+        <h1>BASIC INFO</h1>
+        <form action="/submit" method="post">
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname" value="{{formData.nickname}}">
+
+            <label for="pronouns">Pronouns:</label>
+            <select id="pronouns" name="pronouns">
+                <option value="he" {{#if (eq formData.pronouns "he")}}selected{{/if}}>He</option>
+                <option value="she" {{#if (eq formData.pronouns "she")}}selected{{/if}}>She</option>
+                <option value="other" {{#if (eq formData.pronouns "other")}}selected{{/if}}>Other</option>
+            </select>
+
+            <label for="color">Favorite color:</label>
+            <div class="color-input">
+                <input type="color" id="color" name="color" value="{{formData.color}}">
+                <input type="text" id="colorText" value="{{formData.color}}" readonly>
+            </div>
+
+            <label for="food">Favorite food:</label>
+            <input type="text" id="food" name="food" value="{{formData.food}}">
+
+            <label for="hobby">Favorite hobby:</label>
+            <input type="text" id="hobby" name="hobby" value="{{formData.hobby}}">
+
+            <div class="buttons">
+                <button type="submit" class="continue">CONTINUE</button>
+                <button type="reset" class="delete">DELETE</button>
+            </div>
+        </form>
+    </div>
+    <div class="character"></div>
+</div>
+
+<script>
+document.getElementById('color').addEventListener('input', function(e) {
+    document.getElementById('colorText').value = e.target.value;
+});
+</script>
