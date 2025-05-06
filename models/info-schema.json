@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "info": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "User's nickname"
+        },
+        "pronouns": {
+          "type": "string",
+          "enum": ["he", "she", "other"],
+          "description": "User's preferred pronouns"
+        },
+        "color": {
+          "type": "string",
+          "description": "User's favorite color"
+        },
+        "hobby": {
+          "type": "string",
+          "description": "User's favorite hobby"
+        },
+        "food": {
+          "type": "string",
+          "description": "User's favorite food"
+        }
+      },
+      "required": ["name", "pronouns", "color", "hobby", "food"]
+    }
+  },
+  "required": ["info"]
+}
