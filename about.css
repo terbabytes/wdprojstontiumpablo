@@ -8,8 +8,8 @@ body {
   text-align: center;
   flex-direction: column;
   font-family: 'VT323', monospace;
-  background-color: #1a1a1a;
-  color: #ffffff;
+  background-color: #ce1e37;
+  color: #f4f4f4;
   padding: 0;
 }
 
@@ -89,6 +89,59 @@ nav a[href='#SocialMedia'].active {
   color: #ffffff;
 }
 
+/* Center the FAQ section */
+#FAQs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Container for the question and answer */
+.faq-container {
+  width: 800px; /* Fixed width */
+  background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent white */
+  color: #ffffff; /* Bright white text for contrast */
+  padding: 20px;
+  border: 2px solid rgba(87, 0, 87, 0.3); /* Subtle white border */
+  margin-bottom: 20px;
+  text-align: left;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Style for the question */
+.faq-container summary {
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  list-style: none; /* Remove default triangle */
+}
+
+/* Prevent size change when clicked */
+.faq-container[open] {
+  padding: 20px; /* Ensure padding remains consistent */
+  width: 800px; /* Keep the width fixed */
+}
+
+/* Hover effect for the question */
+.faq-container summary:hover {
+  color: #ff7bf8;
+}
+
+/* Style for the answer */
+.faq-container p {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
 #project-text {
   font-size: 40px;
   color: #ffffff;
@@ -96,11 +149,12 @@ nav a[href='#SocialMedia'].active {
 
 .project-portion {
   width: 80vw;
-  border: 2px solid #666;
+  border: 2px solid rgba(169, 0, 0, 0.3); /* Subtle white border */
   padding: 20px;
   margin-bottom: 60px;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent white */
+  box-shadow: 0 4px 15px rgba(106, 0, 0, 0.2); /* Soft shadow for depth */
+  color: #ffffff; /* Bright white text for contrast */
 }
 
 .project-portion > details > summary {
@@ -120,39 +174,7 @@ li {
 }
 
 .hidden {
-  display: none;
-}
-
-.q {
-  width: 900px;
-}
-
-.question {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  padding: 15px;
-  font-size: 25px;
-  text-align: left;
-  border: 2px solid #666;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.question:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-details {
-  margin-bottom: 20px;
-}
-
-.a {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 20px;
+  display: none !important; /* Use !important to ensure it cannot be overridden */
 }
 
 .abtus {
@@ -167,20 +189,14 @@ details {
   font-size: 20px;
 }
 
-#ptext {
-  font-size: 25px;
-  line-height: 1.5;
-  color: #ffffff;
-}
-
 .project-container {
   width: 75%;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #f4f4f4; /* Softer white for text */
+  background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent white */
   padding: 30px;
   margin-left: 11%;
-  border: 2px solid #666;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(169, 0, 0, 0.3); /* Subtle white border */
+  box-shadow: 0 4px 15px rgba(106, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
 .la,
@@ -194,14 +210,15 @@ details {
 
 .tabtus {
   width: 50vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent white */
   padding: 20px;
   text-align: left;
   font-size: 40px;
-  border: 2px solid #666;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  border: 2px solid rgba(169, 0, 0, 0.3);/* Subtle white border */
+  box-shadow: 0 4px 15px rgba(106, 0, 0, 0.2); /* Soft shadow for depth */
+  color: #ffffff; /* Bright white text for contrast */
 }
+
 
 .tabtus ul {
   list-style: none;
@@ -231,26 +248,14 @@ details {
   display: block;
   max-width: 100%;
   height: auto;
-  border: 2px solid #666;
+  border: 2px solid #9c0000;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-.lsm,
-.tsm {
-  width: 50vw;
-  height: 13vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  text-align: left;
-  font-size: 30px;
-  color: #ffffff;
-  border: 2px solid #666;
-}
 
 h2 {
   font-size: 80px;
-  color: #ffffff;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  color: #ffffff; /* Bright white for headings */
 }
 
 .project-portion a {
@@ -360,8 +365,25 @@ h2 {
 }
 
 footer {
-  color: #888;
+  color: #cccccc; /* Softer gray for footer text */
   position: relative;
   margin-top: 40px;
   font-size: 20px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up by 10px at the midpoint */
+  }
+}
+
+#ptext {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #f4f4f4; /* Softer white for text */
+  animation: float 3s ease-in-out infinite; /* Floating animation */
+  transform: rotate(-2deg); /* Slight tilt for style */
 }
