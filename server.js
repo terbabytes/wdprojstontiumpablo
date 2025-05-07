@@ -8,7 +8,7 @@ const port = 3000;
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static(__dirname)); // Serve static files from the root directory
 
 // Setup Handlebars
 app.engine('hbs', engine({

@@ -1,7 +1,7 @@
 <div class="back-button">
     <figure>
-        <a href="chapters.html">
-            <img src="images/back-arw.png" alt="placeholder" style="width: 100px; height: 100px">
+        <a href="/chapters.html">
+            <img src="/images/back-arw.png" alt="placeholder" style="width: 100px; height: 100px">
         </a>
     </figure>
 </div>
@@ -20,10 +20,7 @@
             </select>
 
             <label for="color">Favorite color:</label>
-            <div class="color-input">
-                <input type="color" id="color" name="color" value="{{formData.color}}">
-                <input type="text" id="colorText" value="{{formData.color}}" readonly>
-            </div>
+<input type="color" id="color" name="color" value="{{formData.color}}">
 
             <label for="food">Favorite food:</label>
             <input type="text" id="food" name="food" value="{{formData.food}}">
@@ -42,6 +39,7 @@
 
 <script>
 document.getElementById('color').addEventListener('input', function(e) {
-    document.getElementById('colorText').value = e.target.value;
+    const colorValue = e.target.value;
+    document.getElementById('colorText').value = colorValue.toUpperCase(); // Ensure it's in uppercase hex format
 });
 </script>

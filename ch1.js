@@ -184,8 +184,8 @@ const npcs = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4733, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4733, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -197,7 +197,7 @@ const npcs = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4723, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4721, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4729, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4722, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -235,21 +235,22 @@ for (let i = 0; i < npcs.length; i += 51) {
 
 
 class Boundary {
-  constructor({ position, dialogue = [] }) { // Add dialogue as a parameter with a default value
+  constructor({ position, dialogue = [], type = "default" }) {
     this.position = position;
-    this.width = 88;
-    this.height = 88;
+    this.width = type === "npc" ? 80 : 88; // Set width based on type
+    this.height = type === "npc" ? 60 : 88; // Set height based on type
     this.dialogue = dialogue; // Store the dialogue
+    this.type = type; // Store the type
   }
 
   draw() {
-    c.fillStyle = "rgba(255,0,0,1)";
+    c.fillStyle = this.type === "npc" ? "rgba(0, 0, 255, 0)" : "rgba(255, 0, 0, 0)"; // Blue for NPCs
     c.fillRect(this.position.x, this.position.y, this.width, this.height);
   }
 }
 
-Boundary.width = 88;
-Boundary.height = 88;
+Boundary.width = 88; // Adjusted value
+Boundary.height = 88; // Adjusted value
 
 const boundaries = [];
 const offset = {
@@ -308,7 +309,7 @@ const npcTest = []
 
 npcMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
-    if (symbol === 4723) {
+    if (symbol === 4729) {
       npcTest.push(
         new Boundary({
           position: {
@@ -316,6 +317,7 @@ npcMap.forEach((row, i) => {
             y: i * Boundary.height + offset.y,
           },
           dialogue: ["I heard they loved to play tetris with Rico"], // Add dialogue here
+          type: "npc", // Ensure type is set to "npc"
           interacted: false, // Track if this NPC has been interacted with
         })
       );
@@ -327,12 +329,12 @@ npcMap.forEach((row, i) => {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y,
           },
-          dialogue: ["test"], // Add dialogue here
+          dialogue: ["I wasn't that close, but I knew they loved this color!"], // Add dialogue here
+          type: "npc", // Ensure type is set to "npc"
           interacted: false, // Track if this NPC has been interacted with
         })
       );
     }
-
     if (symbol === 4732) {
       npcTest.push(
         new Boundary({
@@ -340,14 +342,13 @@ npcMap.forEach((row, i) => {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y,
           },
-          dialogue: ["test2"], // Add dialogue here
+          dialogue: ["One of my best students"], // Add dialogue here
+          type: "npc", // Ensure type is set to "npc"
           interacted: false, // Track if this NPC has been interacted with
         })
       );
     }
-
-
-    if (symbol === 4721) {
+    if (symbol === 4722) {
       npcTest.push(
         new Boundary({
           position: {
@@ -355,6 +356,7 @@ npcMap.forEach((row, i) => {
             y: i * Boundary.height + offset.y,
           },
           dialogue: ["They were such a good friend to me"], // Add dialogue here
+          type: "npc", // Ensure type is set to "npc"
           interacted: false, // Track if this NPC has been interacted with
         })
       );
@@ -462,7 +464,7 @@ const keys = {
 
 const movables = [background, ...boundaries, ...interactive, ...npcTest];
 
-function rectangularCollision({ rectangle1, rectangle2, allowance = 5 }) {
+function rectangularCollision({ rectangle1, rectangle2, allowance = 0 }) {
   return (
     rectangle1.position.x + rectangle1.width >= rectangle2.position.x - allowance &&
     rectangle1.position.x <= rectangle2.position.x + rectangle2.width + allowance &&
@@ -470,7 +472,6 @@ function rectangularCollision({ rectangle1, rectangle2, allowance = 5 }) {
     rectangle1.position.y <= rectangle2.position.y + rectangle2.height + allowance
   );
 }
-
 const sequence = {
   initiated: false,
 }
@@ -507,7 +508,22 @@ function animate() {
   if (playerLocked) return;
 
  
+// Dialogue Box Logic
+const dialogueBox = document.getElementById("dialogueBox");
 
+function showDialogue(dialogue) {
+    dialogueBox.innerHTML = ""; // Clear previous dialogue
+    dialogue.forEach((line) => {
+        const p = document.createElement("p");
+        p.textContent = line;
+        dialogueBox.appendChild(p);
+    });
+    dialogueBox.style.display = "block"; // Show the dialogue box
+}
+
+function hideDialogue() {
+    dialogueBox.style.display = "none"; // Hide the dialogue box
+}
 // Test for NPC interaction
 
 if (keys.w.pressed || keys.a.pressed || keys.s.pressed || keys.d.pressed) {
@@ -564,17 +580,15 @@ if (keys.w.pressed || keys.a.pressed || keys.s.pressed || keys.d.pressed) {
       rectangularCollision({
         rectangle1: player,
         rectangle2: npc,
-        allowance: 7, // Allow a buffer of 10 pixels
+        allowance: 6, // Adjust allowance for better collision detection
       }) &&
       !npc.interacted // Ensure interaction happens only once per NPC
     ) {
       npc.interacted = true; // Mark this NPC as interacted
       playerLocked = true;
-      console.log("Initiate dialogue with NPC:");
+  
       if (npc.dialogue && npc.dialogue.length > 0) {
-        npc.dialogue.forEach((line) => {
-          console.log(`NPC: ${line}`);
-        });
+        showDialogue(npc.dialogue); // Show the dialogue in the box
       } else {
         console.log("NPC has nothing to say.");
       }
@@ -592,9 +606,10 @@ function handleSpacebarInteraction(npc) {
 
 window.addEventListener("keydown", (e) => {
   if (e.key === " " && activeNpc) {
-    activeNpc.interacted = false; // Reset interaction for this NPC
-    activeNpc = null; // Clear the active NPC after interaction
-    playerLocked = false;
+      hideDialogue(); // Hide the dialogue box
+      activeNpc.interacted = false; // Reset interaction for this NPC
+      activeNpc = null; // Clear the active NPC after interaction
+      playerLocked = false; // Unlock the player
   }
 });
 
