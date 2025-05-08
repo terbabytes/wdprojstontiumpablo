@@ -38,21 +38,19 @@ canvas {
 
 #dialogueBox {
   position: fixed;
-  bottom: 10%; /* Position near the bottom of the screen */
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%; /* Adjust width as needed */
+  width: 80%;
   padding: 20px;
-  background-color: rgba(42, 65, 84, 0.8); /* Semi-transparent black background */
-  color: white; /* White text color */
-  border: 2px solid white; /* White border */
-  font-family: "VT323", monospace; /* Match the font style */
-  font-size: 24px; /* Adjust font size */
+  color: white;
+  border: 2px solid white;
+  font-family: "VT323", monospace;
+  font-size: 24px;
   text-align: center;
-  z-index: 1000; /* Ensure it appears above other elements */
-  display: none; /* Initially hidden */
+  z-index: 1000;
+  display: none;
 }
-
 #dialogueBox.hidden {
   display: none; /* Hide the dialogue box when not in use */
 }

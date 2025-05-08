@@ -24,31 +24,31 @@
     <div class="container">
         <div class="form-card">
             <h1>BASIC INFO</h1>
-            <form action=ch1.html method="get">
-                <label for="nickname">Nickname:</label>
-                <input type="text" id="nickname" name="nickname">
-
-                <label for="pronouns">Pronouns:</label>
-                <select id="pronouns" name="pronouns">
-                    <option value="he">He</option>
-                    <option value="she">She</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="color">Favorite color:</label>
-                <input type="text" id="color" name="color">
-
-                <label for="food">Favorite food:</label>
-                <input type="text" id="food" name="food">
-
-                <label for="hobby">Favorite hobby:</label>
-                <input type="text" id="hobby" name="hobby">
-
-                <div class="buttons">
-                    <button type="submit" class="continue">CONTINUE</button>
-                    <button type="reset" class="delete">DELETE</button>
-                </div>
-            </form>
+            <form action="ch1.html" method="get">
+              <label for="nickname">Nickname:</label>
+              <input type="text" id="nickname" name="nickname" required>
+          
+              <label for="pronouns">Pronouns:</label>
+              <select id="pronouns" name="pronouns" required>
+                  <option value="he">He</option>
+                  <option value="she">She</option>
+                  <option value="other">Other</option>
+              </select>
+          
+              <label for="color">Favorite color:</label>
+              <input type="text" id="color" name="color" required>
+          
+              <label for="food">Favorite food:</label>
+              <input type="text" id="food" name="food" required>
+          
+              <label for="hobby">Favorite hobby:</label>
+              <input type="text" id="hobby" name="hobby" required>
+          
+              <div class="buttons">
+                  <button type="submit" class="continue">CONTINUE</button>
+                  <button type="reset" class="delete">DELETE</button>
+              </div>
+          </form>
         </div>
         <div class="character"></div>
     </div>

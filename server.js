@@ -53,6 +53,20 @@ app.post('/submit', (req, res) => {
     res.redirect('/ch1.html');
 });
 
+app.delete('/delete-info', (req, res) => {
+    const filePath = path.join(__dirname, 'models', 'user-info.json');
+
+    fs.unlink(filePath, (err) => {
+        if (err) {
+            console.error('Error deleting user-info.json:', err);
+            res.status(500).json({ message: 'Error deleting data.' });
+            return;
+        }
+        console.log('user-info.json deleted successfully.');
+        res.status(200).json({ message: 'Data deleted successfully.' });
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
