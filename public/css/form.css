@@ -4,22 +4,14 @@ body {
   background-color: #e6eeff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start; /* Align items at the top */
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
   background-image: linear-gradient(rgba(100, 149, 237, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(100, 149, 237, 0.1) 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
-.container {
-  position: relative;
-  width: 600px;
-  background-color: #ffffff;
-  padding: 40px;
-  border: 2px solid #000000;
-  box-shadow: 0 0 20px rgba(100, 149, 237, 0.2);
-  image-rendering: pixelated;
-}
 
 .form-card {
   text-align: center;
@@ -147,6 +139,13 @@ button {
   color: #ffffff;
 }
 
+select option {
+  background-color: #ffffff;
+  color: #4682b4;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+}
+
 .character {
   position: absolute;
   bottom: 20px;
@@ -158,9 +157,70 @@ button {
   opacity: 0.7;
 }
 
-select option {
+.container {
+  position: relative;
+  width: 600px;
+  background-color: #ffffff;
+  padding: 40px;
+  border: 2px solid #000000;
+  box-shadow: 0 0 20px rgba(100, 149, 237, 0.2);
+  image-rendering: pixelated;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 20px; /* Add spacing between the form and the table */
+  margin-top: 20px; /* Add spacing from the top of the viewport */
+  margin-bottom: 20px; /* Add spacing at the bottom */
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+/* Style for the existing data table */
+.existing-data-table {
+  width: 100%; /* Make the table span the full width of the container */
+  border-collapse: collapse;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: #4682b4;
+  text-align: left;
+  margin-top: 20px; /* Add spacing between the form and the table */
+  transform: translate(-5%, 0); /* Translate the table down by 20px */
+}
+
+.existing-data-table th,
+.existing-data-table td {
+  padding: 12px 15px;
+  border: 2px solid #4682b4;
+}
+
+.existing-data-table th {
+  background-color: #4682b4;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.existing-data-table td {
+  background-color: #ffffff;
+}
+
+.existing-data-table td span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #4682b4;
+  border-radius: 3px;
+}
+
+.existing-data-table .delete-info-button {
   background-color: #ffffff;
   color: #4682b4;
-  font-family: 'VT323', monospace;
+  border: 2px solid #4682b4;
+  padding: 8px 16px;
   font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.existing-data-table .delete-info-button:hover {
+  background-color: #4682b4;
+  color: #ffffff;
 }
