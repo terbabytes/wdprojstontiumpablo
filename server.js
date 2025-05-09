@@ -10,13 +10,13 @@ const port = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname)); // Serve static files from the root directory
 
-// Setup Handlebars
 app.engine('hbs', engine({
     extname: '.hbs',
     helpers: {
         eq: (v1, v2) => v1 === v2
     }
 }));
+
 app.set('view engine', 'hbs');
 app.set('views', './views');
 
@@ -26,6 +26,10 @@ app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 // Routes
 app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'homepage.html')); // Serve homepage.html as the default page
+});
+
+app.get('/form', (req, res) => {
     res.render('form', {
         title: 'Basic Info',
         formData: {}

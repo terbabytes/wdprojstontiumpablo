@@ -63,9 +63,12 @@ body {
 }
 
   figcaption {
-    font-size: 50px;
-    color: white;
-  }
+  font-size: 40px;
+  color: white;
+  text-align: center; /* Corrected from "centers" to "center" */
+  margin-top: 10px; /* Add spacing between the image and text */
+  display: block; /* Ensure it behaves as a block element */
+}
   
   #notepad-img, #notepad-hover-img {
     width: 70%;

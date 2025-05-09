@@ -21,6 +21,7 @@ h1 {
   font-size: 50px;
 }
 
+
 .pages {
   display: block;
   margin-left: auto;
@@ -48,6 +49,11 @@ h1 {
 .top-btn,
 .bottom-btn {
   display: flex;
+}
+
+.bottom-btn {
+  display: flex;
+  transform: translateY(-70%);
 }
 
 .top-btn figure, .bottom-btn figure {
@@ -85,7 +91,16 @@ figcaption {
 }
 
 footer {
-  position:fixed;
-  left:2%;
-  bottom:2%;
+  position: fixed;
+  left: 2%;
+  bottom: 2%;
+  margin-bottom: 10px; /* Add some margin if needed */
+}
+
+.pages, .notepad {
+  overflow: hidden; /* Prevent overflow within these elements */
+}
+
+html, body {
+  overflow: hidden;
 }

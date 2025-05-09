@@ -1,9 +1,9 @@
 {
   "info": {
-    "name": "test",
+    "name": "",
     "pronouns": "he",
-    "color": "#bb1b1b",
-    "hobby": "hobby",
-    "food": "food"
+    "color": "#000000",
+    "hobby": "",
+    "food": ""
   }
 }

@@ -8,25 +8,26 @@
 <div class="container">
     <div class="form-card">
         <h1>BASIC INFO</h1>
-        <form action="/submit" method="post">
+        <form id="infoForm" action="/submit" method="post">
             <label for="nickname">Nickname:</label>
-            <input type="text" id="nickname" name="nickname" value="{{formData.nickname}}">
+            <input type="text" id="nickname" name="nickname" value="{{formData.nickname}}" required>
 
             <label for="pronouns">Pronouns:</label>
-            <select id="pronouns" name="pronouns">
+            <select id="pronouns" name="pronouns" required>
+                <option value="" disabled selected>Select your pronouns</option>
                 <option value="he" {{#if (eq formData.pronouns "he")}}selected{{/if}}>He</option>
                 <option value="she" {{#if (eq formData.pronouns "she")}}selected{{/if}}>She</option>
                 <option value="other" {{#if (eq formData.pronouns "other")}}selected{{/if}}>Other</option>
             </select>
 
             <label for="color">Favorite color:</label>
-<input type="color" id="color" name="color" value="{{formData.color}}">
+            <input type="color" id="color" name="color" value="{{formData.color}}" required>
 
             <label for="food">Favorite food:</label>
-            <input type="text" id="food" name="food" value="{{formData.food}}">
+            <input type="text" id="food" name="food" value="{{formData.food}}" required>
 
             <label for="hobby">Favorite hobby:</label>
-            <input type="text" id="hobby" name="hobby" value="{{formData.hobby}}">
+            <input type="text" id="hobby" name="hobby" value="{{formData.hobby}}" required>
 
             <div class="buttons">
                 <button type="submit" class="continue">CONTINUE</button>
@@ -38,8 +39,19 @@
 </div>
 
 <script>
-document.getElementById('color').addEventListener('input', function(e) {
-    const colorValue = e.target.value;
-    document.getElementById('colorText').value = colorValue.toUpperCase(); // Ensure it's in uppercase hex format
-});
+    // Confirm before submitting the form
+    document.getElementById('infoForm').addEventListener('submit', function (e) {
+        const confirmSubmit = confirm('Are you sure you want to submit your information?');
+        if (!confirmSubmit) {
+            e.preventDefault(); // Prevent form submission if the user cancels
+        }
+    });
+
+    // Confirm before resetting the form
+    document.querySelector('button[type="reset"]').addEventListener('click', function (e) {
+        const confirmReset = confirm('Are you sure you want to delete your information?');
+        if (!confirmReset) {
+            e.preventDefault(); // Prevent form reset if the user cancels
+        }
+    });
 </script>
