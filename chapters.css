@@ -5,7 +5,7 @@ html {
 
 body {
     background-color: black;
-    font-family: "VT323", monospace;
+    font-family: pixel;
     color: white;
     width: 100%;
     overscroll-behavior: none;
@@ -125,3 +125,8 @@ body {
     left:2%;
     bottom:2%;
   }
+
+  @font-face {
+  font-family: pixel;
+  src: url(images/PressStart2P.ttf);
+}

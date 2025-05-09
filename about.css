@@ -7,10 +7,11 @@ body {
   margin: 0;
   text-align: center;
   flex-direction: column;
-  font-family: 'VT323', monospace;
+  font-family: pixel;
   background-color: #ce1e37;
   color: #f4f4f4;
   padding: 0;
+  font-size: 18px;
 }
 
 .back-button {
@@ -58,7 +59,7 @@ section {
   color: #ffffff;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 32px;
   background-color: transparent;
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -97,24 +98,30 @@ nav a[href='#SocialMedia'].active {
   justify-content: center;
   margin: 0 auto;
   padding: 20px;
+  max-width: 900px; /* Limit the width for better alignment */
+  text-align: center; /* Center-align the text */
 }
 
-/* Container for the question and answer */
+#FAQs h2 {
+  margin-top: 100px; /* Add extra spacing to avoid overlap with the navigation bar */
+}
+
+/* FAQ container styling */
 .faq-container {
-  width: 800px; /* Fixed width */
+  width: 100%; /* Make it responsive */
   background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent white */
   color: #ffffff; /* Bright white text for contrast */
   padding: 20px;
-  border: 2px solid rgba(87, 0, 87, 0.3); /* Subtle white border */
+  border: 2px solid rgba(87, 0, 87, 0.3); /* Subtle border for consistency */
   margin-bottom: 20px;
-  text-align: left;
+  text-align: left; /* Align text to the left for better readability */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
   box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 /* Style for the question */
 .faq-container summary {
-  font-size: 25px;
+  font-size: 24px; /* Slightly smaller font size */
   font-weight: bold;
   cursor: pointer;
   color: #ffffff;
@@ -126,49 +133,51 @@ nav a[href='#SocialMedia'].active {
 /* Prevent size change when clicked */
 .faq-container[open] {
   padding: 20px; /* Ensure padding remains consistent */
-  width: 800px; /* Keep the width fixed */
 }
 
 /* Hover effect for the question */
 .faq-container summary:hover {
-  color: #ff7bf8;
+  color: #ff7bf8; /* Add a hover color for better interactivity */
 }
 
 /* Style for the answer */
 .faq-container p {
-  font-size: 20px;
+  font-size: 18px; /* Reduce font size for better readability */
   color: #ffffff;
   margin-top: 10px;
   padding-left: 10px;
+  line-height: 1.6; /* Improve text spacing */
+}
+
+/* Style for the FAQ links */
+.faq-container ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.faq-container ul li {
+  font-size: 16px; /* Smaller font size for list items */
+  line-height: 1.5; /* Improve readability */
+}
+
+.faq-container ul li a {
+  color: #ff7bf8; /* Add a distinct color for links */
+  text-decoration: none;
+}
+
+.faq-container ul li a:hover {
+  text-decoration: underline;
+  color: #ffffff; /* Change color on hover */
 }
 
 #project-text {
-  font-size: 40px;
+  font-size: 42px;
   color: #ffffff;
 }
 
-.project-portion {
-  width: 80vw;
-  border: 2px solid rgba(169, 0, 0, 0.3); /* Subtle white border */
-  padding: 20px;
-  margin-bottom: 60px;
-  background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent white */
-  box-shadow: 0 4px 15px rgba(106, 0, 0, 0.2); /* Soft shadow for depth */
-  color: #ffffff; /* Bright white text for contrast */
-}
-
-.project-portion > details > summary {
-  font-size: 50px;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.project-portion > details > summary:hover {
-  color: #cccccc;
-}
 
 li {
-  font-size: 40px;
+  font-size: 42px;
   text-align: left;
   color: #ffffff;
 }
@@ -211,17 +220,22 @@ li {
 .tabtus {
   width: 50vw;
   background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent white */
-  padding: 20px;
+  padding: 15px; /* Reduce padding */
   text-align: left;
-  font-size: 40px;
-  border: 2px solid rgba(169, 0, 0, 0.3);/* Subtle white border */
+  font-size: 16px; /* Smaller font size for better balance */
+  border: 2px solid rgba(169, 0, 0, 0.3); /* Subtle white border */
   box-shadow: 0 4px 15px rgba(106, 0, 0, 0.2); /* Soft shadow for depth */
   color: #ffffff; /* Bright white text for contrast */
 }
 
-
 .tabtus ul {
   list-style: none;
+  padding-left: 10px; /* Add slight padding for better alignment */
+}
+
+.tabtus ul li {
+  font-size: 14px; /* Smaller font size for list items */
+  line-height: 1.5; /* Improve readability */
 }
 
 .abt-us {
@@ -254,8 +268,32 @@ li {
 
 
 h2 {
-  font-size: 80px;
-  color: #ffffff; /* Bright white for headings */
+  font-size: 48px; /* Adjust font size for better readability */
+  color: #ffffff; /* Ensure bright white text for contrast */
+  text-align: center; /* Center-align the heading */
+  margin-top: 50px; /* Add spacing above the heading */
+  z-index: 2; /* Ensure it appears above other elements */
+  position: relative; /* Allow better control over positioning */
+}
+
+.project-portion {
+  width: 75%; /* Match the width of other containers */
+  background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent white */
+  color: #f4f4f4; /* Softer white for text */
+  padding: 20px; /* Add padding for spacing */
+  margin: 20px auto; /* Center the container and add spacing */
+  border: 2px solid rgba(169, 0, 0, 0.3); /* Subtle border for consistency */
+  box-shadow: 0 4px 15px rgba(106, 0, 0, 0.2); /* Soft shadow for depth */
+  text-align: left; /* Align text to the left */
+  font-size: 18px; /* Reduce font size for better readability */
+  line-height: 1.5; /* Improve text spacing */
+}
+
+#project-text {
+  font-size: 20px; /* Slightly smaller font size */
+  line-height: 1.6; /* Improve readability */
+  color: #ffffff; /* Bright white for text */
+  text-align: center; /* Center the text */
 }
 
 .project-portion a {
@@ -299,19 +337,23 @@ h2 {
   background: url('images/ig-icon.png') no-repeat;
   width: 300px;
   height: 321px;
-  transform: translateY(-30%) translateX(30%) scale(30%);
-  transition: all 0.3s ease;
+  transform: translateY(-20%) translateX(20%) scale(40%);
 }
 
 .socmed {
-  transform: translateX(15%);
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+  gap: 20px; /* Add spacing between the buttons */
+  margin-top: 20px; /* Add spacing above the buttons */
+  transform: translateX(0); /* Reset any previous transform */
 }
 
 .insta:hover {
   background: url('images/ig-icon-hover.png') no-repeat;
   width: 300px;
   height: 321px;
-  transform: translateY(-30%) translateX(30%) scale(30%);
+  transform: translateY(-20%) translateX(20%) scale(40%);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
@@ -319,15 +361,14 @@ h2 {
   background: url('images/x-icon.png') no-repeat;
   width: 300px;
   height: 321px;
-  transform: translateY(-30%) translateX(-30%) scale(30%);
-  transition: all 0.3s ease;
+  transform: translateY(-20%) translateX(-20%) scale(40%);
 }
 
 .twitter:hover {
   background: url('images/x-icon-hover.png') no-repeat;
   width: 300px;
   height: 321px;
-  transform: translateY(-30%) translateX(-30%) scale(30%);
+  transform: translateY(-20%) translateX(-20%) scale(40%);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
@@ -336,18 +377,18 @@ h2 {
 }
 
 .email-container > p {
-  font-size: 30px;
+  font-size: 18px;
   color: #ffffff;
 }
 
 .social-media-container > p {
-  font-size: 30px;
+  font-size: 18px;
   color: #ffffff;
 }
 
 .emails {
   position: relative;
-  font-size: 30px;
+  font-size: 18px;
   transform: translateX(10%) translateY(-30%);
   max-width: 80%;
 }
@@ -385,5 +426,9 @@ footer {
   line-height: 1.5;
   color: #f4f4f4; /* Softer white for text */
   animation: float 3s ease-in-out infinite; /* Floating animation */
-  transform: rotate(-2deg); /* Slight tilt for style */
+}
+
+@font-face {
+  font-family: pixel;
+  src: url(images/PressStart2P.ttf);
 }

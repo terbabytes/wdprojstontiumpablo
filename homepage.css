@@ -15,7 +15,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "VT323", monospace;
+  font-family: pixel;
 }
 .moving-streak {
   position: absolute;
@@ -34,36 +34,33 @@ body{
 
 /* Callout styles */
 .callout {
-  font-size: 25px;
+  font-size: 20px; /* Slightly larger font size */
+  line-height: 1.8; /* Improve text spacing */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   max-width: 800px;
+  text-align: center; /* Center-align the text */
 }
 
 .callout-container {
-  padding: 20px;
+  padding: 30px; /* Add more padding for better spacing */
   width: 500px;
   background-color: red;
   color: white;
-  right: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
 .closebtn {
   position: absolute;
-  top: -15px;
+  top: 10px; /* Adjust position for better alignment */
   right: 15px;
   color: black;
-  font-size: 50px;
+  font-size: 30px; /* Slightly smaller close button */
   cursor: pointer;
 }
-
-.closebtn:hover {
-  color: white;
-}
-
 figure {
   display: flex;
   flex-direction: column;
@@ -134,4 +131,9 @@ footer {
   position:fixed;
   left:2%;
   bottom:2%;
+}
+
+@font-face {
+  font-family: pixel;
+  src: url(images/PressStart2P.ttf);
 }
