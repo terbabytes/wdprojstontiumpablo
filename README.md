@@ -47,8 +47,8 @@ You play as Elijah, a ghost who recently died inside the Edge Lab and cannot lea
 
 <details>
   <summary>Homepage (😍)</summary>
-  **Description**:
-  - Background designed to resemble an old camera.
+  Description: <br>
+  - Background designed to resemble an old camera. <br>
   - Includes main buttons (Play, About).
 
   **Files**:
@@ -59,8 +59,8 @@ You play as Elijah, a ghost who recently died inside the Edge Lab and cannot lea
 
 <details>
   <summary>Chapters Page (😍)</summary>
-  **Description**:
-  - Contains one chapter (Legacy Chapter).
+  Description: <br>
+  - Contains one chapter (Legacy Chapter). <br>
   - Includes a redirect to the notepad page.
 
   **Files**:
@@ -72,7 +72,7 @@ You play as Elijah, a ghost who recently died inside the Edge Lab and cannot lea
 
 <details>
   <summary>About Page (😍)</summary>
-  **Description**:
+  Description: <br>
   - Includes project description, author information, Q&A, and social media links.
 
   **Files**:
@@ -82,9 +82,9 @@ You play as Elijah, a ghost who recently died inside the Edge Lab and cannot lea
 
 <details>
   <summary>Notepad (😍)</summary>
-  **Description**:
-  - Displays information about each character.
-  - All npcs + the player model have their own pages
+  Description: <br>
+  - Displays information about each character. <br>
+  - All npcs + the player model have their own pages 
 
   **Files**:
   - `notepad.html`
@@ -94,10 +94,10 @@ You play as Elijah, a ghost who recently died inside the Edge Lab and cannot lea
 
 <details>
   <summary>Legacy Game (😁)</summary>
-  **Description**:
-  - Short gameplay focused on art and page formatting.
-   - A somewhat accurate model of the edge was made (except for the broken PCs on the floor)
-  - Tileset is finalized
+  Description:
+  - Short gameplay focused on art and page formatting. <br>
+   - A somewhat accurate model of the edge was made (except for the broken PCs on the floor) <br>
+  - Tileset is finalized <br>
   - ONLY ISSUE: I can't get the color to change that one dialogue box, but it still does output the hex code color.
 
   **Files**:
@@ -108,8 +108,8 @@ You play as Elijah, a ghost who recently died inside the Edge Lab and cannot lea
 
 <details>
   <summary>Form (😁)</summary>
-  **Description**:
-  - Collects player information.
+  Description: <br>
+  - Collects player information. <br>
   - Color option only allows a wheel which is collected as a hex code (#000000)
 
   **Files**:
